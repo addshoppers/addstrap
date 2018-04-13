@@ -1,0 +1,23 @@
+{
+  "name": "addstrap",
+  "version": "1.0.0",
+  "description": "addshoppers ui library",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/addshoppers/addstrap.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/addshoppers/addstrap/issues"
+  },
+  "homepage": "https://github.com/addshoppers/addstrap#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}

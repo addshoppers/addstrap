@@ -1,0 +1,24 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+//
+// Code Editor
+// --------------------------------------------------
+
+.code-editor.ace-tm {
+  border: 1px solid $gray-lighter;
+  border-radius: 5px;
+  color: $gray-base;
+
+  & .ace_gutter {
+    background: $brand-white;
+    border-right: 1px solid $gray-lighter;
+    color: $gray-base;
+  }
+  & .ace_gutter-active-line {
+    background: $gray-lighter;
+  }
+  & .ace_print-margin {
+    display: none;
+  }
+}

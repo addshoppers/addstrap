@@ -1,0 +1,161 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+//
+// Alerts
+// --------------------------------------------------
+
+
+// Base styles
+// -------------------------
+
+.#{$class-prefix}alert {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  bottom: $spacing-s;
+  right: $spacing-s;
+  max-width: 400px;
+  padding: $alert-padding;
+  border: 1px solid transparent;
+  border-radius: $alert-border-radius;
+  -webkit-box-shadow: 0 8px 50px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 50px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+
+  &.#{$class-prefix}alert.#{$class-prefix}shown-default {
+    display: block;
+
+    &:before {
+      display: none;
+    }
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.1);
+    animation: alert-progress 5.6s ease-in-out;
+    -webkit-animation: alert-progress 5.6s ease-in-out;
+    -moz-animation: alert-progress 5.6s ease-in-out;
+    -o-animation: alert-progress 5.6s ease-in-out;
+  }
+
+  // Headings for larger alerts
+  h4 {
+    margin-top: 0;
+    // Specified for the h4 to prevent conflicts of changing $headings-color
+    color: inherit;
+  }
+
+  // Provide class for links that match alerts
+  .#{$class-prefix}alert-link {
+    font-weight: $alert-link-font-weight;
+  }
+
+  // Improve alignment and spacing of inner content
+  > p,
+  > ul {
+    margin-bottom: 0;
+  }
+
+  > p + p {
+    margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: $screen-sm-max) {
+  .#{$class-prefix}alert {
+    width: calc(100% - 30px);
+  }
+}
+
+// Dismissible alerts
+//
+// Expand the right padding and account for the close button's positioning.
+
+.#{$class-prefix}alert-dismissable, // The misspelled .alert-dismissable was deprecated in 3.2.0.
+.#{$class-prefix}alert-dismissible {
+  padding-right: ($alert-padding + 20);
+
+  // Adjust close link position
+  .#{$class-prefix}close {
+    position: relative;
+    top: -2px;
+    right: -21px;
+    opacity: .5;
+    color: $brand-white;
+
+    &:hover {
+      opacity: 1;
+      color: $brand-white;
+    }
+  }
+}
+
+// Alternate styles
+//
+// Generate contextual modifier classes for colorizing the alert.
+
+.#{$class-prefix}alert-success {
+  @include alert-variant($alert-success-bg, $alert-success-border, $alert-success-text);
+}
+
+.#{$class-prefix}alert-info {
+  @include alert-variant($alert-info-bg, $alert-info-border, $alert-info-text);
+
+  & .close, .close:hover {
+    color: $alert-info-text;
+  }
+}
+
+.#{$class-prefix}alert-warning {
+  @include alert-variant($alert-warning-bg, $alert-warning-border, $alert-warning-text);
+}
+
+.#{$class-prefix}alert-danger {
+  @include alert-variant($alert-danger-bg, $alert-danger-border, $alert-danger-text);
+}
+
+// Alert progress bar animation
+
+@keyframes alert-progress {
+  from {
+    transform: translateX(0);
+  }
+  
+  to {
+    transform: translateX(-100%);
+  }
+}
+@-webkit-keyframes alert-progress {
+  from {
+    -webkit-transform: translateX(0);
+  }
+  
+  to {
+    -webkit-transform: translateX(-100%);
+  }
+}
+@-moz-keyframes alert-progress {
+  from {
+    -moz-transform: translateX(0);
+  }
+  
+  to {
+    -moz-transform: translateX(-100%);
+  }
+}
+@-o-keyframes alert-progress {
+  from {
+    -o-transform: translateX(0);
+  }
+  
+  to {
+    -o-transform: translateX(-100%);
+  }
+}

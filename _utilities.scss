@@ -1,0 +1,1534 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+//
+// Utility classes
+// --------------------------------------------------
+
+
+// Floats
+// -------------------------
+
+.#{$class-prefix}clearfix {
+  @include clearfix;
+}
+.#{$class-prefix}center-block {
+  @include center-block;
+}
+.#{$class-prefix}pull-right {
+  float: right !important;
+}
+.#{$class-prefix}pull-left {
+  float: left !important;
+}
+
+// Centering
+// -------------------------
+.#{$class-prefix}dis-tbl {
+    display: table;
+    width: 100%;
+    height: 100%;
+
+    & .#{$class-prefix}dis-tblcell {
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
+
+// Toggling content
+// -------------------------
+
+// Note: Deprecated .hide in favor of .hidden or .sr-only (as appropriate) in v3.}0.1
+.#{$class-prefix}hide {
+  display: none !important;
+}
+.#{$class-prefix}show {
+  display: block !important;
+}
+.#{$class-prefix}invisible {
+  visibility: hidden;
+}
+.#{$class-prefix}text-hide {
+  @include text-hide;
+}
+
+
+// Hide from screenreaders and browsers
+//
+// Credit: HTML5 Boilerplate
+
+.#{$class-prefix}hidden {
+  display: none !important;
+}
+
+
+// For Affix plugin
+// -------------------------
+
+.#{$class-prefix}affix {
+  position: fixed;
+}
+
+// Fills
+// -------------------------
+.#{$class-prefix}orange-fill {
+  background-color: $brand-orange; 
+}
+.#{$class-prefix}blue-fill {
+  background-color: $brand-blue; 
+}
+.#{$class-prefix}green-fill {
+  background-color: $brand-green; 
+}
+.#{$class-prefix}purple-fill {
+  background-color: $brand-purple; 
+}
+.#{$class-prefix}yellow-fill {
+  background-color: $brand-yellow; 
+}
+.#{$class-prefix}red-fill {
+  background-color: $brand-red; 
+}
+.#{$class-prefix}graybase-fill {
+  background-color: $gray-base; 
+}
+.#{$class-prefix}graydarker-fill {
+  background-color: $gray-darker; 
+}
+.#{$class-prefix}graydark-fill {
+  background-color: $gray-dark; 
+}
+.#{$class-prefix}gray-fill {
+  background-color: $gray; 
+}
+.#{$class-prefix}graylight-fill {
+  background-color: $gray-light; 
+}
+.#{$class-prefix}graylighter-fill {
+  background-color: $gray-lighter; 
+}
+
+// Radius
+// -------------------------
+.#{$class-prefix}borderRadius-l {
+  border-radius: 10px;
+}
+
+.#{$class-prefix}borderRadius-m {
+  border-radius: 5px;
+}
+
+.#{$class-prefix}borderRadius-s {
+  border-radius: 3px;
+}
+
+.#{$class-prefix}borderRadius-0,
+.#{$class-prefix}buttonGroup .#{$class-prefix}button {
+  border-radius: 0;
+}
+
+// Spacing
+// -------------------------
+.#{$class-prefix}margin-0 {
+    margin: $spacing-none;
+}
+
+.#{$class-prefix}marginTop-0 {
+    margin-top: $spacing-none;
+}
+
+.#{$class-prefix}marginRight-0 {
+    margin-right: $spacing-none;
+}
+
+.#{$class-prefix}marginBottom-0 {
+    margin-bottom: $spacing-none;
+}
+
+.#{$class-prefix}marginLeft-0 {
+    margin-left: $spacing-none;
+}
+
+.#{$class-prefix}marginTopBottom-0 {
+    margin-top: $spacing-none;
+    margin-bottom: $spacing-none;
+}
+
+.#{$class-prefix}marginLeftRight-0 {
+    margin-left: $spacing-none;
+    margin-right: $spacing-none;
+}
+
+.#{$class-prefix}margin-xxs {
+    margin: $spacing-xxs;
+}
+
+.#{$class-prefix}marginTop-xxs {
+    margin-top: $spacing-xxs;
+}
+
+.#{$class-prefix}marginRight-xxs {
+    margin-right: $spacing-xxs;
+}
+
+.#{$class-prefix}marginBottom-xxs {
+    margin-bottom: $spacing-xxs;
+}
+
+.#{$class-prefix}marginLeft-xxs {
+    margin-left: $spacing-xxs;
+}
+
+.#{$class-prefix}marginTopBottom-xxs {
+    margin-top: $spacing-xxs;
+    margin-bottom: $spacing-xxs;
+}
+
+.#{$class-prefix}marginLeftRight-xxs {
+    margin-left: $spacing-xxs;
+    margin-right: $spacing-xxs;
+}
+
+.#{$class-prefix}margin-xs {
+    margin: $spacing-xs;
+}
+
+.#{$class-prefix}marginTop-xs {
+    margin-top: $spacing-xs;
+}
+
+.#{$class-prefix}marginRight-xs {
+    margin-right: $spacing-xs;
+}
+
+.#{$class-prefix}marginBottom-xs {
+    margin-bottom: $spacing-xs;
+}
+
+.#{$class-prefix}marginLeft-xs {
+    margin-left: $spacing-xs;
+}
+
+.#{$class-prefix}marginTopBottom-xs {
+    margin-top: $spacing-xs;
+    margin-bottom: $spacing-xs;
+}
+
+.#{$class-prefix}marginLeftRight-xs {
+    margin-left: $spacing-xs;
+    margin-right: $spacing-xs;
+}
+
+.#{$class-prefix}margin-s {
+    margin: $spacing-s;
+}
+
+.#{$class-prefix}marginTop-s {
+    margin-top: $spacing-s;
+}
+
+.#{$class-prefix}marginRight-s {
+    margin-right: $spacing-s;
+}
+
+.#{$class-prefix}marginBottom-s {
+    margin-bottom: $spacing-s;
+}
+
+.#{$class-prefix}marginLeft-s {
+    margin-left: $spacing-s;
+}
+
+.#{$class-prefix}marginTopBottom-s {
+    margin-top: $spacing-s;
+    margin-bottom: $spacing-s;
+}
+
+.#{$class-prefix}marginLeftRight-s {
+    margin-left: $spacing-s;
+    margin-right: $spacing-s;
+}
+
+.#{$class-prefix}margin-m {
+    margin: $spacing-m;
+}
+
+.#{$class-prefix}marginTop-m {
+    margin-top: $spacing-m;
+}
+
+.#{$class-prefix}marginRight-m {
+    margin-right: $spacing-m;
+}
+
+.#{$class-prefix}marginBottom-m{
+    margin-bottom: $spacing-m;
+}
+
+.#{$class-prefix}marginLeft-m{
+    margin-left: $spacing-m;
+}
+
+.#{$class-prefix}marginTopBottom-m {
+    margin-top: $spacing-m;
+    margin-bottom: $spacing-m;
+}
+
+.#{$class-prefix}marginLeftRight-m {
+    margin-left: $spacing-m;
+    margin-right: $spacing-m;
+}
+
+.#{$class-prefix}margin-l {
+    margin: $spacing-l;
+}
+
+.#{$class-prefix}marginTop-l {
+    margin-top: $spacing-l;
+}
+
+.#{$class-prefix}marginRight-l {
+    margin-right: $spacing-l;
+}
+
+.#{$class-prefix}marginBottom-l {
+    margin-bottom: $spacing-l;
+}
+
+.#{$class-prefix}marginLeft-l {
+    margin-left: $spacing-l;
+}
+
+.#{$class-prefix}marginTopBottom-l {
+    margin-top: $spacing-l;
+    margin-bottom: $spacing-l;
+}
+
+.#{$class-prefix}marginLeftRight-l {
+    margin-left: $spacing-l;
+    margin-right: $spacing-l;
+}
+
+.#{$class-prefix}margin-xl {
+    margin: $spacing-xl;
+}
+
+.#{$class-prefix}marginTop-xl {
+    margin-top: $spacing-xl;
+}
+
+.#{$class-prefix}marginRight-xl {
+    margin-right: $spacing-xl;
+}
+
+.#{$class-prefix}marginBottom-xl {
+    margin-bottom: $spacing-xl;
+}
+
+.#{$class-prefix}marginLeft-xl {
+    margin-left: $spacing-xl;
+}
+
+.#{$class-prefix}marginTopBottom-xl {
+    margin-top: $spacing-xl;
+    margin-bottom: $spacing-xl;
+}
+
+.#{$class-prefix}marginLeftRight-xl {
+    margin-left: $spacing-xl;
+    margin-right: $spacing-xl;
+}
+
+@media screen and (min-width:480px) {
+    .#{$class-prefix}breakPointS-margin-0 {
+        margin: $spacing-none;
+    }
+    .#{$class-prefix}breakPointS-marginTop-0 {
+        margin-top: $spacing-none;
+    }
+    .#{$class-prefix}breakPointS-marginRight-0 {
+        margin-right: $spacing-none;
+    }
+    .#{$class-prefix}breakPointS-marginBottom-0 {
+        margin-bottom: $spacing-none;
+    }
+    .#{$class-prefix}breakPointS-marginLeft-0 {
+        margin-left: $spacing-none;
+    }
+    .#{$class-prefix}breakPointS-marginTopBottom-0 {
+        margin-top: $spacing-none;
+        margin-bottom: $spacing-none;
+    }
+    .#{$class-prefix}breakPointS-marginLeftRight-0 {
+        margin-left: $spacing-none;
+        margin-right: $spacing-none;
+    }
+    .#{$class-prefix}breakPointS-margin-xxs {
+        margin: $spacing-xxs;
+    }
+    .#{$class-prefix}breakPointS-marginTop-xxs {
+        margin-top: $spacing-xxs;
+    }
+    .#{$class-prefix}breakPointS-marginRight-xxs {
+        margin-right: $spacing-xxs;
+    }
+    .#{$class-prefix}breakPointS-marginBottom-xxs {
+        margin-bottom: $spacing-xxs;
+    }
+    .#{$class-prefix}breakPointS-marginLeft-xxs {
+        margin-left: $spacing-xxs;
+    }
+    .#{$class-prefix}breakPointS-marginTopBottom-xxs {
+        margin-top: $spacing-xxs;
+        margin-bottom: $spacing-xxs;
+    }
+    .#{$class-prefix}breakPointS-marginLeftRight-xxs {
+        margin-left: $spacing-xxs;
+        margin-right: $spacing-xxs;
+    }
+    .#{$class-prefix}breakPointS-margin-xs {
+        margin: $spacing-xs;
+    }
+    .#{$class-prefix}breakPointS-marginTop-xs {
+        margin-top: $spacing-xs;
+    }
+    .#{$class-prefix}breakPointS-marginRight-xs {
+        margin-right: $spacing-xs;
+    }
+    .#{$class-prefix}breakPointS-marginBottom-xs {
+        margin-bottom: $spacing-xs;
+    }
+    .#{$class-prefix}breakPointS-marginLeft-xs {
+        margin-left: $spacing-xs;
+    }
+    .#{$class-prefix}breakPointS-marginTopBottom-xs {
+        margin-top: $spacing-xs;
+        margin-bottom: $spacing-xs;
+    }
+    .#{$class-prefix}breakPointS-marginLeftRight-xs {
+        margin-left: $spacing-xs;
+        margin-right: $spacing-xs;
+    }
+    .#{$class-prefix}breakPointS-margin-s {
+        margin: $spacing-s;
+    }
+    .#{$class-prefix}breakPointS-marginTop-s {
+        margin-top: $spacing-s;
+    }
+    .#{$class-prefix}breakPointS-marginRight-s {
+        margin-right: $spacing-s;
+    }
+    .#{$class-prefix}breakPointS-marginBottom-s {
+        margin-bottom: $spacing-s;
+    }
+    .#{$class-prefix}breakPointS-marginLeft-s {
+        margin-left: $spacing-s;
+    }
+    .#{$class-prefix}breakPointS-marginTopBottom-s {
+        margin-top: $spacing-s;
+        margin-bottom: $spacing-s;
+    }
+    .#{$class-prefix}breakPointS-marginLeftRight-s {
+        margin-left: $spacing-xs;
+        margin-right: $spacing-xs;
+    }
+    .#{$class-prefix}breakPointS-margin-m {
+        margin: $spacing-m;
+    }
+    .#{$class-prefix}breakPointS-marginTop-m {
+        margin-top: $spacing-m;
+    }
+    .#{$class-prefix}breakPointS-marginRight-m {
+        margin-right: $spacing-m;
+    }
+    .#{$class-prefix}breakPointS-marginBottom-m {
+        margin-bottom: $spacing-m;
+    }
+    .#{$class-prefix}breakPointS-marginLeft-m {
+        margin-left: $spacing-m;
+    }
+    .#{$class-prefix}breakPointS-marginTopBottom-m {
+        margin-top: $spacing-m;
+        margin-bottom: $spacing-m;
+    }
+    .#{$class-prefix}breakPointS-marginLeftRight-m {
+        margin-left: $spacing-m;
+        margin-right: $spacing-m;
+    }
+    .#{$class-prefix}breakPointS-margin-l {
+        margin: $spacing-l;
+    }
+    .#{$class-prefix}breakPointS-marginTop-l {
+        margin-top: $spacing-l;
+    }
+    .#{$class-prefix}breakPointS-marginRight-l {
+        margin-right: $spacing-l;
+    }
+    .#{$class-prefix}breakPointS-marginBottom-l {
+        margin-bottom: $spacing-l;
+    }
+    .#{$class-prefix}breakPointS-marginLeft-l {
+        margin-left: $spacing-l;
+    }
+    .#{$class-prefix}breakPointS-marginTopBottom-l {
+        margin-top: $spacing-l;
+        margin-bottom: $spacing-l;
+    }
+    .#{$class-prefix}breakPointS-marginLeftRight-l {
+        margin-left: $spacing-l;
+        margin-right: $spacing-l;
+    }
+    .#{$class-prefix}breakPointS-margin-xl {
+        margin: $spacing-xl;
+    }
+    .#{$class-prefix}breakPointS-marginTop-xl {
+        margin-top: $spacing-xl;
+    }
+    .#{$class-prefix}breakPointS-marginRight-xl {
+        margin-right: $spacing-xl;
+    }
+    .#{$class-prefix}breakPointS-marginBottom-xl {
+        margin-bottom: $spacing-xl;
+    }
+    .#{$class-prefix}breakPointS-marginLeft-xl {
+        margin-left: $spacing-xl;
+    }
+    .#{$class-prefix}breakPointS-marginTopBottom-xl {
+        margin-top: $spacing-xl;
+        margin-bottom: $spacing-xl;
+    }
+    .#{$class-prefix}breakPointS-marginLeftRight-xl {
+        margin-left: $spacing-xl;
+        margin-right: $spacing-xl;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .#{$class-prefix}breakPointM-margin-0 {
+        margin: $spacing-none;
+    }
+    .#{$class-prefix}breakPointM-marginTop-0 {
+        margin-top: $spacing-none;
+    }
+    .#{$class-prefix}breakPointM-marginRight-0 {
+        margin-right: $spacing-none;
+    }
+    .#{$class-prefix}breakPointM-marginBottom-0 {
+        margin-bottom: $spacing-none;
+    }
+    .#{$class-prefix}breakPointM-marginLeft-0 {
+        margin-left: $spacing-none;
+    }
+    .#{$class-prefix}breakPointM-marginTopBottom-0 {
+        margin-top: $spacing-none;
+        margin-bottom: $spacing-none;
+    }
+    .#{$class-prefix}breakPointM-marginLeftRight-0 {
+        margin-left: $spacing-none;
+        margin-right: $spacing-none;
+    }
+    .#{$class-prefix}breakPointM-margin-xxs {
+        margin: $spacing-xxs;
+    }
+    .#{$class-prefix}breakPointM-marginTop-xxs {
+        margin-top: $spacing-xxs;
+    }
+    .#{$class-prefix}breakPointM-marginRight-xxs {
+        margin-right: $spacing-xxs;
+    }
+    .#{$class-prefix}breakPointM-marginBottom-xxs {
+        margin-bottom: $spacing-xxs;
+    }
+    .#{$class-prefix}breakPointM-marginLeft-xxs {
+        margin-left: $spacing-xxs;
+    }
+    .#{$class-prefix}breakPointM-marginTopBottom-xxs {
+        margin-top: $spacing-xxs;
+        margin-bottom: $spacing-xxs;
+    }
+    .#{$class-prefix}breakPointM-marginLeftRight-xxs {
+        margin-left: $spacing-xxs;
+        margin-right: $spacing-xxs;
+    }
+    .#{$class-prefix}breakPointM-margin-xs {
+        margin: $spacing-xs;
+    }
+    .#{$class-prefix}breakPointM-marginTop-xs {
+        margin-top: $spacing-xs;
+    }
+    .#{$class-prefix}breakPointM-marginRight-xs {
+        margin-right: $spacing-xs;
+    }
+    .#{$class-prefix}breakPointM-marginBottom-xs {
+        margin-bottom: $spacing-xs;
+    }
+    .#{$class-prefix}breakPointM-marginLeft-xs {
+        margin-left: $spacing-xs;
+    }
+    .#{$class-prefix}breakPointM-marginTopBottom-xs {
+        margin-top: $spacing-xs;
+        margin-bottom: $spacing-xs;
+    }
+    .#{$class-prefix}breakPointM-marginLeftRight-xs {
+        margin-left: $spacing-xs;
+        margin-right: $spacing-xs;
+    }
+    .#{$class-prefix}breakPointM-margin-s {
+        margin: $spacing-s;
+    }
+    .#{$class-prefix}breakPointM-marginTop-s {
+        margin-top: $spacing-s;
+    }
+    .#{$class-prefix}breakPointM-marginRight-s {
+        margin-right: $spacing-s;
+    }
+    .#{$class-prefix}breakPointM-marginBottom-s {
+        margin-bottom: $spacing-s;
+    }
+    .#{$class-prefix}breakPointM-marginLeft-s {
+        margin-left: $spacing-s;
+    }
+    .#{$class-prefix}breakPointM-marginTopBottom-s {
+        margin-top: $spacing-s;
+        margin-bottom: $spacing-s;
+    }
+    .#{$class-prefix}breakPointM-marginLeftRight-s {
+        margin-left: $spacing-s;
+        margin-right: $spacing-s;
+    }
+    .#{$class-prefix}breakPointM-margin-m {
+        margin: $spacing-m;
+    }
+    .#{$class-prefix}breakPointM-marginTop-m {
+        margin-top: $spacing-m;
+    }
+    .#{$class-prefix}breakPointM-marginRight-m {
+        margin-right: $spacing-m;
+    }
+    .#{$class-prefix}breakPointM-marginBottom-m {
+        margin-bottom: $spacing-m;
+    }
+    .#{$class-prefix}breakPointM-marginLeft-m {
+        margin-left: $spacing-m;
+    }
+    .#{$class-prefix}breakPointM-marginTopBottom-m {
+        margin-top: $spacing-m;
+        margin-bottom: $spacing-m;
+    }
+    .#{$class-prefix}breakPointM-marginLeftRight-m {
+        margin-left: $spacing-m;
+        margin-right: $spacing-m;
+    }
+    .#{$class-prefix}breakPointM-margin-l {
+        margin: $spacing-l;
+    }
+    .#{$class-prefix}breakPointM-marginTop-l {
+        margin-top: $spacing-l;
+    }
+    .#{$class-prefix}breakPointM-marginRight-l {
+        margin-right: $spacing-l;
+    }
+    .#{$class-prefix}breakPointM-marginBottom-l {
+        margin-bottom: $spacing-l;
+    }
+    .#{$class-prefix}breakPointM-marginLeft-l {
+        margin-left: $spacing-l;
+    }
+    .#{$class-prefix}breakPointM-marginTopBottom-l {
+        margin-top: $spacing-l;
+        margin-bottom: $spacing-l;
+    }
+    .#{$class-prefix}breakPointM-marginLeftRight-l {
+        margin-left: $spacing-l;
+        margin-right: $spacing-l;
+    }
+    .#{$class-prefix}breakPointM-margin-xl {
+        margin: $spacing-xl;
+    }
+    .#{$class-prefix}breakPointM-marginTop-xl {
+        margin-top: $spacing-xl;
+    }
+    .#{$class-prefix}breakPointM-marginRight-xl {
+        margin-right: $spacing-xl;
+    }
+    .#{$class-prefix}breakPointM-marginBottom-xl {
+        margin-bottom: $spacing-xl;
+    }
+    .#{$class-prefix}breakPointM-marginLeft-xl {
+        margin-left: $spacing-xl;
+    }
+    .#{$class-prefix}breakPointM-marginTopBottom-xl {
+        margin-top: $spacing-xl;
+        margin-bottom: $spacing-xl;
+    }
+    .#{$class-prefix}breakPointM-marginLeftRight-xl {
+        margin-left: $spacing-xl;
+        margin-right: $spacing-xl;
+    }
+}
+
+@media screen and (min-width:1180px) {
+    .#{$class-prefix}breakPointL-margin-0 {
+        margin: $spacing-none;
+    }
+    .#{$class-prefix}breakPointL-marginTop-0 {
+        margin-top: $spacing-none;
+    }
+    .#{$class-prefix}breakPointL-marginRight-0 {
+        margin-right: $spacing-none;
+    }
+    .#{$class-prefix}breakPointL-marginBottom-0 {
+        margin-bottom: $spacing-none;
+    }
+    .#{$class-prefix}breakPointL-marginLeft-0 {
+        margin-left: $spacing-none;
+    }
+    .#{$class-prefix}breakPointL-marginTopBottom-0 {
+        margin-top: $spacing-none;
+        margin-bottom: $spacing-none;
+    }
+    .#{$class-prefix}breakPointL-marginLeftRight-0 {
+        margin-left: $spacing-none;
+        margin-right: $spacing-none;
+    }
+    .#{$class-prefix}breakPointL-margin-xxs {
+        margin: $spacing-xxs;
+    }
+    .#{$class-prefix}breakPointL-marginTop-xxs {
+        margin-top: $spacing-xxs;
+    }
+    .#{$class-prefix}breakPointL-marginRight-xxs {
+        margin-right: $spacing-xxs;
+    }
+    .#{$class-prefix}breakPointL-marginBottom-xxs {
+        margin-bottom: $spacing-xxs;
+    }
+    .#{$class-prefix}breakPointL-marginLeft-xxs {
+        margin-left: $spacing-xxs;
+    }
+    .#{$class-prefix}breakPointL-marginTopBottom-xxs {
+        margin-top: $spacing-xxs;
+        margin-bottom: $spacing-xxs;
+    }
+    .#{$class-prefix}breakPointL-marginLeftRight-xxs {
+        margin-left: $spacing-xxs;
+        margin-right: $spacing-xxs;
+    }
+    .#{$class-prefix}breakPointL-margin-xs {
+        margin: $spacing-xs;
+    }
+    .#{$class-prefix}breakPointL-marginTop-xs {
+        margin-top: $spacing-xs;
+    }
+    .#{$class-prefix}breakPointL-marginRight-xs {
+        margin-right: $spacing-xs;
+    }
+    .#{$class-prefix}breakPointL-marginBottom-xs {
+        margin-bottom: $spacing-xs;
+    }
+    .#{$class-prefix}breakPointL-marginLeft-xs {
+        margin-left: $spacing-xs;
+    }
+    .#{$class-prefix}breakPointL-marginTopBottom-xs {
+        margin-top: $spacing-xs;
+        margin-bottom: $spacing-xs;
+    }
+    .#{$class-prefix}breakPointL-marginLeftRight-xs {
+        margin-left: $spacing-xs;
+        margin-right: $spacing-xs;
+    }
+    .#{$class-prefix}breakPointL-margin-s {
+        margin: $spacing-s;
+    }
+    .#{$class-prefix}breakPointL-marginTop-s {
+        margin-top: $spacing-s;
+    }
+    .#{$class-prefix}breakPointL-marginRight-s {
+        margin-right: $spacing-s;
+    }
+    .#{$class-prefix}breakPointL-marginBottom-s {
+        margin-bottom: $spacing-s;
+    }
+    .#{$class-prefix}breakPointL-marginLeft-s {
+        margin-left: $spacing-s;
+    }
+    .#{$class-prefix}breakPointL-marginTopBottom-s {
+        margin-top: $spacing-s;
+        margin-bottom: $spacing-s;
+    }
+    .#{$class-prefix}breakPointL-marginLeftRight-s {
+        margin-left: $spacing-s;
+        margin-right: $spacing-s;
+    }
+    .#{$class-prefix}breakPointL-margin-m {
+        margin: $spacing-m;
+    }
+    .#{$class-prefix}breakPointL-marginTop-m {
+        margin-top: $spacing-m;
+    }
+    .#{$class-prefix}breakPointL-marginRight-m {
+        margin-right: $spacing-m;
+    }
+    .#{$class-prefix}breakPointL-marginBottom-m {
+        margin-bottom: $spacing-m;
+    }
+    .#{$class-prefix}breakPointL-marginLeft-m {
+        margin-left: $spacing-m;
+    }
+    .#{$class-prefix}breakPointL-marginTopBottom-m {
+        margin-top: $spacing-m;
+        margin-bottom: $spacing-m;
+    }
+    .#{$class-prefix}breakPointL-marginLeftRight-m {
+        margin-left: $spacing-m;
+        margin-right: $spacing-m;
+    }
+    .#{$class-prefix}breakPointL-margin-l {
+        margin: $spacing-l;
+    }
+    .#{$class-prefix}breakPointL-marginTop-l {
+        margin-top: $spacing-l;
+    }
+    .#{$class-prefix}breakPointL-marginRight-l {
+        margin-right: $spacing-l;
+    }
+    .#{$class-prefix}breakPointL-marginBottom-l {
+        margin-bottom: $spacing-l;
+    }
+    .#{$class-prefix}breakPointL-marginLeft-l {
+        margin-left: $spacing-l;
+    }
+    .#{$class-prefix}breakPointL-marginTopBottom-l {
+        margin-top: $spacing-l;
+        margin-bottom: $spacing-l;
+    }
+    .#{$class-prefix}breakPointL-marginLeftRight-l {
+        margin-left: $spacing-l;
+        margin-right: $spacing-l;
+    }
+    .#{$class-prefix}breakPointL-margin-xl {
+        margin: $spacing-xl;
+    }
+    .#{$class-prefix}breakPointL-marginTop-xl {
+        margin-top: $spacing-xl;
+    }
+    .#{$class-prefix}breakPointL-marginRight-xl {
+        margin-right: $spacing-xl;
+    }
+    .#{$class-prefix}breakPointL-marginBottom-xl {
+        margin-bottom: $spacing-xl;
+    }
+    .#{$class-prefix}breakPointL-marginLeft-xl {
+        margin-left: $spacing-xl;
+    }
+    .#{$class-prefix}breakPointL-marginTopBottom-xl {
+        margin-top: $spacing-xl;
+        margin-bottom: $spacing-xl;
+    }
+    .#{$class-prefix}breakPointL-marginLeftRight-xl {
+        margin-left: $spacing-xl;
+        margin-right: $spacing-xl;
+    }
+}
+
+.#{$class-prefix}padding-0 {
+    padding: $spacing-none;
+}
+
+.#{$class-prefix}paddingTop-0 {
+    padding-top: $spacing-none;
+}
+
+.#{$class-prefix}paddingRight-0 {
+    padding-right: $spacing-none;
+}
+
+.#{$class-prefix}paddingBottom-0 {
+    padding-bottom: $spacing-none;
+}
+
+.#{$class-prefix}paddingLeft-0 {
+    padding-left: $spacing-none;
+}
+
+.#{$class-prefix}paddingTopBottom-0 {
+    padding-top: $spacing-none;
+    padding-bottom: $spacing-none;
+}
+
+.#{$class-prefix}paddingLeftRight-0 {
+    padding-left: $spacing-none;
+    padding-right: $spacing-none;
+}
+
+.#{$class-prefix}padding-xxs {
+    padding: $spacing-xxs;
+}
+
+.#{$class-prefix}paddingTop-xxs {
+    padding-top: $spacing-xxs;
+}
+
+.#{$class-prefix}paddingRight-xxs {
+    padding-right: $spacing-xxs;
+}
+
+.#{$class-prefix}paddingBottom-xxs {
+    padding-bottom: $spacing-xxs;
+}
+
+.#{$class-prefix}paddingLeft-xxs {
+    padding-left: $spacing-xxs;
+}
+
+.#{$class-prefix}paddingTopBottom-xxs {
+    padding-top: $spacing-xxs;
+    padding-bottom: $spacing-xxs;
+}
+
+.#{$class-prefix}paddingLeftRight-xxs {
+    padding-left: $spacing-xxs;
+    padding-right: $spacing-xxs;
+}
+
+.#{$class-prefix}padding-xs {
+    padding: $spacing-xs;
+}
+
+.#{$class-prefix}paddingTop-xs {
+    padding-top: $spacing-xs;
+}
+
+.#{$class-prefix}paddingRight-xs {
+    padding-right: $spacing-xs;
+}
+
+.#{$class-prefix}paddingBottom-xs {
+    padding-bottom: $spacing-xs;
+}
+
+.#{$class-prefix}paddingLeft-xs {
+    padding-left: $spacing-xs;
+}
+
+.#{$class-prefix}paddingTopBottom-xs {
+    padding-top: $spacing-xs;
+    padding-bottom: $spacing-xs;
+}
+
+.#{$class-prefix}paddingLeftRight-xs {
+    padding-left: $spacing-xs;
+    padding-right: $spacing-xs;
+}
+
+.#{$class-prefix}padding-s {
+    padding: $spacing-s;
+}
+
+.#{$class-prefix}paddingTop-s {
+    padding-top: $spacing-s;
+}
+
+.#{$class-prefix}paddingRight-s {
+    padding-right: $spacing-s;
+}
+
+.#{$class-prefix}paddingBottom-s {
+    padding-bottom: $spacing-s;
+}
+
+.#{$class-prefix}paddingLeft-s {
+    padding-left: $spacing-s;
+}
+
+.#{$class-prefix}paddingTopBottom-s {
+    padding-top: $spacing-s;
+    padding-bottom: $spacing-s;
+}
+
+.#{$class-prefix}paddingLeftRight-s {
+    padding-left: $spacing-s;
+    padding-right: $spacing-s;
+}
+
+.#{$class-prefix}padding-m {
+    padding: $spacing-m;
+}
+
+.#{$class-prefix}paddingTop-m {
+    padding-top: $spacing-m;
+}
+
+.#{$class-prefix}paddingRight-m {
+    padding-right: $spacing-m;
+}
+
+.#{$class-prefix}paddingBottom-m {
+    padding-bottom: $spacing-m;
+}
+
+.#{$class-prefix}paddingLeft-m {
+    padding-left: $spacing-m;
+}
+
+.#{$class-prefix}paddingTopBottom-m {
+    padding-top: $spacing-m;
+    padding-bottom: $spacing-m;
+}
+
+.#{$class-prefix}paddingLeftRight-m {
+    padding-left: $spacing-m;
+    padding-right: $spacing-m;
+}
+
+.#{$class-prefix}padding-l {
+    padding: $spacing-l;
+}
+
+.#{$class-prefix}paddingTop-l {
+    padding-top: $spacing-l;
+}
+
+.#{$class-prefix}paddingRight-l {
+    padding-right: $spacing-l;
+}
+
+.#{$class-prefix}paddingBottom-l {
+    padding-bottom: $spacing-l;
+}
+
+.#{$class-prefix}paddingLeft-l {
+    padding-left: $spacing-l;
+}
+
+.#{$class-prefix}paddingTopBottom-l {
+    padding-top: $spacing-l;
+    padding-bottom: $spacing-l;
+}
+
+.#{$class-prefix}paddingLeftRight-l {
+    padding-left: $spacing-l;
+    padding-right: $spacing-l;
+}
+
+.#{$class-prefix}padding-xl {
+    padding: $spacing-xl;
+}
+
+.#{$class-prefix}paddingTop-xl {
+    padding-top: $spacing-xl;
+}
+
+.#{$class-prefix}paddingRight-xl {
+    padding-right: $spacing-xl;
+}
+
+.#{$class-prefix}paddingBottom-xl {
+    padding-bottom: $spacing-xl;
+}
+
+.#{$class-prefix}paddingLeft-xl {
+    padding-left: $spacing-xl;
+}
+
+.#{$class-prefix}paddingTopBottom-xl {
+    padding-top: $spacing-xl;
+    padding-bottom: $spacing-xl;
+}
+
+.#{$class-prefix}paddingLeftRight-xl {
+    padding-left: $spacing-xl;
+    padding-right: $spacing-xl;
+}
+
+@media screen and (min-width:480px) {
+    .#{$class-prefix}breakPointS-padding-0 {
+        padding: $spacing-none;
+    }
+    .#{$class-prefix}breakPointS-paddingTop-0 {
+        padding-top: $spacing-none;
+    }
+    .#{$class-prefix}breakPointS-paddingRight-0 {
+        padding-right: $spacing-none;
+    }
+    .#{$class-prefix}breakPointS-paddingBottom-0 {
+        padding-bottom: $spacing-none;
+    }
+    .#{$class-prefix}breakPointS-paddingLeft-0 {
+        padding-left: $spacing-none;
+    }
+    .#{$class-prefix}breakPointS-paddingTopBottom-0 {
+        padding-top: $spacing-none;
+        padding-bottom: $spacing-none;
+    }
+    .#{$class-prefix}breakPointS-paddingLeftRight-0 {
+        padding-left: $spacing-none;
+        padding-right: $spacing-none;
+    }
+    .#{$class-prefix}breakPointS-padding-xxs {
+        padding: $spacing-xxs;
+    }
+    .#{$class-prefix}breakPointS-paddingTop-xxs {
+        padding-top: $spacing-xxs;
+    }
+    .#{$class-prefix}breakPointS-paddingRight-xxs {
+        padding-right: $spacing-xxs;
+    }
+    .#{$class-prefix}breakPointS-paddingBottom-xxs {
+        padding-bottom: $spacing-xxs;
+    }
+    .#{$class-prefix}breakPointS-paddingLeft-xxs {
+        padding-left: $spacing-xxs;
+    }
+    .#{$class-prefix}breakPointS-paddingTopBottom-xxs {
+        padding-top: $spacing-xxs;
+        padding-bottom: $spacing-xxs;
+    }
+    .#{$class-prefix}breakPointS-paddingLeftRight-xxs {
+        padding-left: $spacing-xxs;
+        padding-right: $spacing-xxs;
+    }
+    .#{$class-prefix}breakPointS-padding-xs {
+        padding: $spacing-xs;
+    }
+    .#{$class-prefix}breakPointS-paddingTop-xs {
+        padding-top: $spacing-xs;
+    }
+    .#{$class-prefix}breakPointS-paddingRight-xs {
+        padding-right: $spacing-xs;
+    }
+    .#{$class-prefix}breakPointS-paddingBottom-xs {
+        padding-bottom: $spacing-xs;
+    }
+    .#{$class-prefix}breakPointS-paddingLeft-xs {
+        padding-left: $spacing-xs;
+    }
+    .#{$class-prefix}breakPointS-paddingTopBottom-xs {
+        padding-top: $spacing-xs;
+        padding-bottom: $spacing-xs;
+    }
+    .#{$class-prefix}breakPointS-paddingLeftRight-xs {
+        padding-left: $spacing-xs;
+        padding-right: $spacing-xs;
+    }
+    .#{$class-prefix}breakPointS-padding-s {
+        padding: $spacing-s;
+    }
+    .#{$class-prefix}breakPointS-paddingTop-s {
+        padding-top: $spacing-s;
+    }
+    .#{$class-prefix}breakPointS-paddingRight-s {
+        padding-right: $spacing-s;
+    }
+    .#{$class-prefix}breakPointS-paddingBottom-s {
+        padding-bottom: $spacing-s;
+    }
+    .#{$class-prefix}breakPointS-paddingLeft-s {
+        padding-left: $spacing-s;
+    }
+    .#{$class-prefix}breakPointS-paddingTopBottom-s {
+        padding-top: $spacing-s;
+        padding-bottom: $spacing-s;
+    }
+    .#{$class-prefix}breakPointS-paddingLeftRight-s {
+        padding-left: $spacing-s;
+        padding-right: $spacing-s;
+    }
+    .#{$class-prefix}breakPointS-padding-m {
+        padding: $spacing-m;
+    }
+    .#{$class-prefix}breakPointS-paddingTop-m {
+        padding-top: $spacing-m;
+    }
+    .#{$class-prefix}breakPointS-paddingRight-m {
+        padding-right: $spacing-m;
+    }
+    .#{$class-prefix}breakPointS-paddingBottom-m {
+        padding-bottom: $spacing-m;
+    }
+    .#{$class-prefix}breakPointS-paddingLeft-m {
+        padding-left: $spacing-m;
+    }
+    .#{$class-prefix}breakPointS-paddingTopBottom-m {
+        padding-top: $spacing-m;
+        padding-bottom: $spacing-m;
+    }
+    .#{$class-prefix}breakPointS-paddingLeftRight-m {
+        padding-left: $spacing-m;
+        padding-right: $spacing-m;
+    }
+    .#{$class-prefix}breakPointS-padding-l {
+        padding: $spacing-l;
+    }
+    .#{$class-prefix}breakPointS-paddingTop-l {
+        padding-top: $spacing-l;
+    }
+    .#{$class-prefix}breakPointS-paddingRight-l {
+        padding-right: $spacing-l;
+    }
+    .#{$class-prefix}breakPointS-paddingBottom-l {
+        padding-bottom: $spacing-l;
+    }
+    .#{$class-prefix}breakPointS-paddingLeft-l {
+        padding-left: $spacing-l;
+    }
+    .#{$class-prefix}breakPointS-paddingTopBottom-l {
+        padding-top: $spacing-l;
+        padding-bottom: $spacing-l;
+    }
+    .#{$class-prefix}breakPointS-paddingLeftRight-l {
+        padding-left: $spacing-l;
+        padding-right: $spacing-l;
+    }
+    .#{$class-prefix}breakPointS-padding-xl {
+        padding: $spacing-xl;
+    }
+    .#{$class-prefix}breakPointS-paddingTop-xl {
+        padding-top: $spacing-xl;
+    }
+    .#{$class-prefix}breakPointS-paddingRight-xl {
+        padding-right: $spacing-xl;
+    }
+    .#{$class-prefix}breakPointS-paddingBottom-xl {
+        padding-bottom: $spacing-xl;
+    }
+    .#{$class-prefix}breakPointS-paddingLeft-xl {
+        padding-left: $spacing-xl;
+    }
+    .#{$class-prefix}breakPointS-paddingTopBottom-xl {
+        padding-top: $spacing-xl;
+        padding-bottom: $spacing-xl;
+    }
+    .#{$class-prefix}breakPointS-paddingLeftRight-xl {
+        padding-left: $spacing-xl;
+        padding-right: $spacing-xl;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .#{$class-prefix}breakPointM-padding-0 {
+        padding: $spacing-none;
+    }
+    .#{$class-prefix}breakPointM-paddingTop-0 {
+        padding-top: $spacing-none;
+    }
+    .#{$class-prefix}breakPointM-paddingRight-0 {
+        padding-right: $spacing-none;
+    }
+    .#{$class-prefix}breakPointM-paddingBottom-0 {
+        padding-bottom: $spacing-none;
+    }
+    .#{$class-prefix}breakPointM-paddingLeft-0 {
+        padding-left: $spacing-none;
+    }
+    .#{$class-prefix}breakPointM-paddingTopBottom-0 {
+        padding-top: $spacing-none;
+        padding-bottom: $spacing-none;
+    }
+    .#{$class-prefix}breakPointM-paddingLeftRight-0 {
+        padding-left: $spacing-none;
+        padding-right: $spacing-none;
+    }
+    .#{$class-prefix}breakPointM-padding-xxs {
+        padding: $spacing-xxs;
+    }
+    .#{$class-prefix}breakPointM-paddingTop-xxs {
+        padding-top: $spacing-xxs;
+    }
+    .#{$class-prefix}breakPointM-paddingRight-xxs {
+        padding-right: $spacing-xxs;
+    }
+    .#{$class-prefix}breakPointM-paddingBottom-xxs {
+        padding-bottom: $spacing-xxs;
+    }
+    .#{$class-prefix}breakPointM-paddingLeft-xxs {
+        padding-left: $spacing-xxs;
+    }
+    .#{$class-prefix}breakPointM-paddingTopBottom-xxs {
+        padding-top: $spacing-xxs;
+        padding-bottom: $spacing-xxs;
+    }
+    .#{$class-prefix}breakPointM-paddingLeftRight-xxs {
+        padding-left: $spacing-xxs;
+        padding-right: $spacing-xxs;
+    }
+    .#{$class-prefix}breakPointM-padding-xs {
+        padding: $spacing-xs;
+    }
+    .#{$class-prefix}breakPointM-paddingTop-xs {
+        padding-top: $spacing-xs;
+    }
+    .#{$class-prefix}breakPointM-paddingRight-xs {
+        padding-right: $spacing-xs;
+    }
+    .#{$class-prefix}breakPointM-paddingBottom-xs {
+        padding-bottom: $spacing-xs;
+    }
+    .#{$class-prefix}breakPointM-paddingLeft-xs {
+        padding-left: $spacing-xs;
+    }
+    .#{$class-prefix}breakPointM-paddingTopBottom-xs {
+        padding-top: $spacing-xs;
+        padding-bottom: $spacing-xs;
+    }
+    .#{$class-prefix}breakPointM-paddingLeftRight-xs {
+        padding-left: $spacing-xs;
+        padding-right: $spacing-xs;
+    }
+    .#{$class-prefix}breakPointM-padding-s {
+        padding: $spacing-s;
+    }
+    .#{$class-prefix}breakPointM-paddingTop-s {
+        padding-top: $spacing-s;
+    }
+    .#{$class-prefix}breakPointM-paddingRight-s {
+        padding-right: $spacing-s;
+    }
+    .#{$class-prefix}breakPointM-paddingBottom-s {
+        padding-bottom: $spacing-s;
+    }
+    .#{$class-prefix}breakPointM-paddingLeft-s {
+        padding-left: $spacing-s;
+    }
+    .#{$class-prefix}breakPointM-paddingTopBottom-s {
+        padding-top: $spacing-s;
+        padding-bottom: $spacing-s;
+    }
+    .#{$class-prefix}breakPointM-paddingLeftRight-s {
+        padding-left: $spacing-s;
+        padding-right: $spacing-s;
+    }
+    .#{$class-prefix}breakPointM-padding-m {
+        padding: $spacing-m;
+    }
+    .#{$class-prefix}breakPointM-paddingTop-m {
+        padding-top: $spacing-m;
+    }
+    .#{$class-prefix}breakPointM-paddingRight-m {
+        padding-right: $spacing-m;
+    }
+    .#{$class-prefix}breakPointM-paddingBottom-m {
+        padding-bottom: $spacing-m;
+    }
+    .#{$class-prefix}breakPointM-paddingLeft-m {
+        padding-left: $spacing-m;
+    }
+    .#{$class-prefix}breakPointM-paddingTopBottom-m {
+        padding-top: $spacing-m;
+        padding-bottom: $spacing-m;
+    }
+    .#{$class-prefix}breakPointM-paddingLeftRight-m {
+        padding-left: $spacing-m;
+        padding-right: $spacing-m;
+    }
+    .#{$class-prefix}breakPointM-padding-l {
+        padding: $spacing-l;
+    }
+    .#{$class-prefix}breakPointM-paddingTop-l {
+        padding-top: $spacing-l;
+    }
+    .#{$class-prefix}breakPointM-paddingRight-l {
+        padding-right: $spacing-l;
+    }
+    .#{$class-prefix}breakPointM-paddingBottom-l {
+        padding-bottom: $spacing-l;
+    }
+    .#{$class-prefix}breakPointM-paddingLeft-l {
+        padding-left: $spacing-l;
+    }
+    .#{$class-prefix}breakPointM-paddingTopBottom-l {
+        padding-top: $spacing-l;
+        padding-bottom: $spacing-l;
+    }
+    .#{$class-prefix}breakPointM-paddingLeftRight-l {
+        padding-left: $spacing-l;
+        padding-right: $spacing-l;
+    }
+    .#{$class-prefix}breakPointM-padding-xl {
+        padding: $spacing-xl;
+    }
+    .#{$class-prefix}breakPointM-paddingTop-xl {
+        padding-top: $spacing-xl;
+    }
+    .#{$class-prefix}breakPointM-paddingRight-xl {
+        padding-right: $spacing-xl;
+    }
+    .#{$class-prefix}breakPointM-paddingBottom-xl {
+        padding-bottom: $spacing-xl;
+    }
+    .#{$class-prefix}breakPointM-paddingLeft-xl {
+        padding-left: $spacing-xl;
+    }
+    .#{$class-prefix}breakPointM-paddingTopBottom-xl {
+        padding-top: $spacing-xl;
+        padding-bottom: $spacing-xl;
+    }
+    .#{$class-prefix}breakPointM-paddingLeftRight-xl {
+        padding-left: $spacing-xl;
+        padding-right: $spacing-xl;
+    }
+}
+
+@media screen and (min-width:1180px) {
+    .#{$class-prefix}breakPointL-padding-0 {
+        padding: $spacing-none;
+    }
+    .#{$class-prefix}breakPointL-paddingTop-0 {
+        padding-top: $spacing-none;
+    }
+    .#{$class-prefix}breakPointL-paddingRight-0 {
+        padding-right: $spacing-none;
+    }
+    .#{$class-prefix}breakPointL-paddingBottom-0 {
+        padding-bottom: $spacing-none;
+    }
+    .#{$class-prefix}breakPointL-paddingLeft-0 {
+        padding-left: $spacing-none;
+    }
+    .#{$class-prefix}breakPointL-paddingTopBottom-0 {
+        padding-top: $spacing-none;
+        padding-bottom: $spacing-none;
+    }
+    .#{$class-prefix}breakPointL-paddingLeftRight-0 {
+        padding-left: $spacing-none;
+        padding-right: $spacing-none;
+    }
+    .#{$class-prefix}breakPointL-padding-xxs {
+        padding: $spacing-xxs;
+    }
+    .#{$class-prefix}breakPointL-paddingTop-xxs {
+        padding-top: $spacing-xxs;
+    }
+    .#{$class-prefix}breakPointL-paddingRight-xxs {
+        padding-right: $spacing-xxs;
+    }
+    .#{$class-prefix}breakPointL-paddingBottom-xxs {
+        padding-bottom: $spacing-xxs;
+    }
+    .#{$class-prefix}breakPointL-paddingLeft-xxs {
+        padding-left: $spacing-xxs;
+    }
+    .#{$class-prefix}breakPointL-paddingTopBottom-xxs {
+        padding-top: $spacing-xxs;
+        padding-bottom: $spacing-xxs;
+    }
+    .#{$class-prefix}breakPointL-paddingLeftRight-xxs {
+        padding-left: $spacing-xxs;
+        padding-right: $spacing-xxs;
+    }
+    .#{$class-prefix}breakPointL-padding-xs {
+        padding: $spacing-xs;
+    }
+    .#{$class-prefix}breakPointL-paddingTop-xs {
+        padding-top: $spacing-xs;
+    }
+    .#{$class-prefix}breakPointL-paddingRight-xs {
+        padding-right: $spacing-xs;
+    }
+    .#{$class-prefix}breakPointL-paddingBottom-xs {
+        padding-bottom: $spacing-xs;
+    }
+    .#{$class-prefix}breakPointL-paddingLeft-xs {
+        padding-left: $spacing-xs;
+    }
+    .#{$class-prefix}breakPointL-paddingTopBottom-xs {
+        padding-top: $spacing-xs;
+        padding-bottom: $spacing-xs;
+    }
+    .#{$class-prefix}breakPointL-paddingLeftRight-xs {
+        padding-left: $spacing-xs;
+        padding-right: $spacing-xs;
+    }
+    .#{$class-prefix}breakPointL-padding-s {
+        padding: $spacing-s;
+    }
+    .#{$class-prefix}breakPointL-paddingTop-s {
+        padding-top: $spacing-s;
+    }
+    .#{$class-prefix}breakPointL-paddingRight-s {
+        padding-right: $spacing-s;
+    }
+    .#{$class-prefix}breakPointL-paddingBottom-s {
+        padding-bottom: $spacing-s;
+    }
+    .#{$class-prefix}breakPointL-paddingLeft-s {
+        padding-left: $spacing-s;
+    }
+    .#{$class-prefix}breakPointL-paddingTopBottom-s {
+        padding-top: $spacing-s;
+        padding-bottom: $spacing-s;
+    }
+    .#{$class-prefix}breakPointL-paddingLeftRight-s {
+        padding-left: $spacing-s;
+        padding-right: $spacing-s;
+    }
+    .#{$class-prefix}breakPointL-padding-m {
+        padding: $spacing-m;
+    }
+    .#{$class-prefix}breakPointL-paddingTop-m {
+        padding-top: $spacing-m;
+    }
+    .#{$class-prefix}breakPointL-paddingRight-m {
+        padding-right: $spacing-m;
+    }
+    .#{$class-prefix}breakPointL-paddingBottom-m {
+        padding-bottom: $spacing-m;
+    }
+    .#{$class-prefix}breakPointL-paddingLeft-m {
+        padding-left: $spacing-m;
+    }
+    .#{$class-prefix}breakPointL-paddingTopBottom-m {
+        padding-top: $spacing-m;
+        padding-bottom: $spacing-m;
+    }
+    .#{$class-prefix}breakPointL-paddingLeftRight-m {
+        padding-left: $spacing-m;
+        padding-right: $spacing-m;
+    }
+    .#{$class-prefix}breakPointL-padding-l {
+        padding: $spacing-l;
+    }
+    .#{$class-prefix}breakPointL-paddingTop-l {
+        padding-top: $spacing-l;
+    }
+    .#{$class-prefix}breakPointL-paddingRight-l {
+        padding-right: $spacing-l;
+    }
+    .#{$class-prefix}breakPointL-paddingBottom-l {
+        padding-bottom: $spacing-l;
+    }
+    .#{$class-prefix}breakPointL-paddingLeft-l {
+        padding-left: $spacing-l;
+    }
+    .#{$class-prefix}breakPointL-paddingTopBottom-l {
+        padding-top: $spacing-l;
+        padding-bottom: $spacing-l;
+    }
+    .#{$class-prefix}breakPointL-paddingLeftRight-l {
+        padding-left: $spacing-l;
+        padding-right: $spacing-l;
+    }
+    .#{$class-prefix}breakPointL-padding-xl {
+        padding: $spacing-xl;
+    }
+    .#{$class-prefix}breakPointL-paddingTop-xl {
+        padding-top: $spacing-xl;
+    }
+    .#{$class-prefix}breakPointL-paddingRight-xl {
+        padding-right: $spacing-xl;
+    }
+    .#{$class-prefix}breakPointL-paddingBottom-xl {
+        padding-bottom: $spacing-xl;
+    }
+    .#{$class-prefix}breakPointL-paddingLeft-xl {
+        padding-left: $spacing-xl;
+    }
+    .#{$class-prefix}breakPointL-paddingTopBottom-xl {
+        padding-top: $spacing-xl;
+        padding-bottom: $spacing-xl;
+    }
+    .#{$class-prefix}breakPointL-paddingLeftRight-xl {
+        padding-left: $spacing-xl;
+        padding-right: $spacing-xl;
+    }
+}

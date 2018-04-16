@@ -16,7 +16,9 @@ const appHtmlTitle = 'Webpack Boilerplate';
  */
 module.exports = {
     entry: {
-        bundle: path.join(dirApp, 'index')
+        addstrap: path.join(dirApp, 'addstrap'),
+        cs_addstrap: path.join(dirApp, 'cs_addstrap'),
+        dashcs_addstrap: path.join(dirApp, 'dashcs_addstrap')
     },
     resolve: {
         modules: [

@@ -1,0 +1,72 @@
+// Variables
+$class-prefix: 'addshop-';
+
+$font-family-base: Arial, sans-serif;
+$font-size-base: 16px;
+$text-color: #5b5b5b;
+
+$border-radius-base: 0;
+
+$input-border: #ddd;
+$input-color: #5b5b5b;
+$input-border-focus: #ccc;
+$input-color-placeholder: #ddd;
+
+$btn-primary-bg: #64B3DF;
+
+// Template Styles
+@import "./_campaign-base.scss";
+@import "./_campaign-modal.scss";
+@import "./_campaign-portal.scss";
+
+// Framework Styles
+.#{$class-prefix}wrap {
+
+// Reset and dependencies
+// @import "./_normalize.scss";
+// @import "./_print.scss";
+// @import "./_glyphicons.scss";
+
+// Core CSS
+// @import "./_scaffolding.scss";
+@import "./_type.scss";
+// @import "./_code.scss";
+@import "./_grid.scss";
+@import "./_tables.scss";
+@import "./_forms.scss";
+@import "./_buttons.scss";
+
+// Components
+// @import "./_component-animations.scss";
+// @import "./_dropdowns.scss";
+@import "./_button-groups.scss";
+@import "./_input-groups.scss";
+// @import "./_navs.scss";
+// @import "./_navbar.scss";
+// @import "./_breadcrumbs.scss";
+// @import "./_pagination.scss";
+// @import "./_pager.scss";
+// @import "./_labels.scss";
+// @import "./_badges.scss";
+// @import "./_jumbotron.scss";
+@import "./_thumbnails.scss";
+@import "./_alerts.scss";
+// @import "./_progress-bars.scss";
+@import "./_media.scss";
+// @import "./_list-group.scss";
+// @import "./_panels.scss";
+@import "./_responsive-embed.scss";
+// @import "./_wells.scss";
+@import "./_close.scss";
+
+// Components w/ JavaScript
+// @import "./_modals.scss";
+// @import "./_tooltip.scss";
+// @import "./_popovers.scss";
+// @import "./_carousel.scss";
+
+// Utility classes
+@import "./_utilities.scss";
+@import "./_responsive-utilities.scss";
+
+}

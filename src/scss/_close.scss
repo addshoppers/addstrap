@@ -19,6 +19,7 @@
     color: $close-color;
     text-decoration: none;
     cursor: pointer;
+    outline: none;
     @include opacity(.5);
   }
 

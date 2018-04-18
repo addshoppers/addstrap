@@ -1,7 +1,7 @@
 @import "variables.scss";
 @import "mixins.scss";
 
-.addshop-wrap {
+.#{$class-prefix}wrap {
   margin: 0;
   padding: 0;
   border: 0;
@@ -50,7 +50,7 @@
   color: #5b5b5b;
 }
 
-.addshop-overlay {
+.#{$class-prefix}overlay {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -60,20 +60,20 @@
   opacity: 0;
   visibility: hidden;
   z-index: 9;
-  &.addshop-active {
+  &.#{$class-prefix}active {
     opacity: .6;
     visibility: visible;
   }
 }
 
-.addshop-round {
+.#{$class-prefix}round {
   border-radius: 500px;
 }
 
-.addshop-roundsquare {
+.#{$class-prefix}roundsquare {
   border-radius: 5px;
 }
 
-.addshop-square {
+.#{$class-prefix}square {
   border-radius: 0;
 }

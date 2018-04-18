@@ -1,7 +1,7 @@
 @import "variables.scss";
 @import "mixins.scss";
 
-.addshop-wrap.addshop-modal {
+.#{$class-prefix}wrap.#{$class-prefix}modal {
   position: fixed;
   bottom: 50%;
   right: 50%;
@@ -14,17 +14,17 @@
   box-shadow: 0px 15px 40px 0px rgba(0, 0, 0, 0.2);
   z-index: 99;
   transition: .2s;
-  &.addshop-modal-min {
+  &.#{$class-prefix}modal-min {
     height: 180px;
     bottom: 20px;
     right: 20px;
     transform: translate(0%, 0%);
     max-width: 400px;
-    .addshop-modal-wrap {
+    .#{$class-prefix}modal-wrap {
       overflow: hidden;
     }
   }
-  button.addshop-close {
+  button.#{$class-prefix}close {
     position: absolute;
     top: 15px;
     right: 15px;
@@ -40,26 +40,26 @@
 }
 
 @media screen and (max-width: 480px) {
-  .addshop-wrap.addshop-modal {
+  .#{$class-prefix}wrap.#{$class-prefix}modal {
     width: calc(100% - 40px);
     height: calc(100% - 40px);
   }
 }
 
 @media screen and (max-width: 480px) {
-  .addshop-wrap.addshop-modal.addshop-modal-min {
+  .#{$class-prefix}wrap.#{$class-prefix}modal.#{$class-prefix}modal-min {
     width: calc(100% - 40px);
     height: 150px;
   }
 }
 
-.addshop-modal-wrap {
+.#{$class-prefix}modal-wrap {
   overflow-x: hidden;
   overflow-y: auto;
   height: 100%;
   scrollbar-face-color: #fff;
   scrollbar-track-color: #aaa;
-  .addshop-modal-header {
+  .#{$class-prefix}modal-header {
     position: relative;
     background-color: #5b5b5b;
     background-position: center;
@@ -72,7 +72,7 @@
     transition: all .3s;
     -webkit-transition: all .3s;
     overflow: hidden;
-    .addshop-modal-header-content {
+    .#{$class-prefix}modal-header-content {
       display: table-cell;
       vertical-align: middle;
       font-weight: 700;
@@ -90,10 +90,10 @@
       z-index: 0;
     }
   }
-  .addshop-modal-content {
+  .#{$class-prefix}modal-content {
     padding: 30px;
   }
-  .addshop-coupon {
+  .#{$class-prefix}coupon {
     display: inline-block;
     padding: 15px;
     border: 2px dashed #ddd;
@@ -257,25 +257,25 @@
 }
 
 @media screen and (max-width: 480px) {
-  .addshop-modal-wrap .addshop-modal-header {
+  .#{$class-prefix}modal-wrap .#{$class-prefix}modal-header {
     height: 150px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .addshop-modal-wrap .addshop-modal-header .addshop-modal-header-content {
+  .#{$class-prefix}modal-wrap .#{$class-prefix}modal-header .#{$class-prefix}modal-header-content {
     font-size: 22px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .addshop-modal-wrap .addshop-modal-header .addshop-modal-header-content span {
+  .#{$class-prefix}modal-wrap .#{$class-prefix}modal-header .#{$class-prefix}modal-header-content span {
     font-size: 22px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .addshop-modal-wrap .addshop-modal-content .addshop-h3 {
+  .#{$class-prefix}modal-wrap .#{$class-prefix}modal-content .#{$class-prefix}h3 {
     font-size: 22px;
     span {
       font-size: 22px;
@@ -284,13 +284,13 @@
 }
 
 @media screen and (max-width: 480px) {
-  .addshop-modal-wrap .addshop-modal-content .addshop-h4 span {
+  .#{$class-prefix}modal-wrap .#{$class-prefix}modal-content .#{$class-prefix}h4 span {
     font-size: 18px;
   }
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
-  .addshop-modal-wrap #AddShoppersWall {
+  .#{$class-prefix}modal-wrap #AddShoppersWall {
     .adw-block:hover .adw-sharebox, div#adw-filter-toggle {
       display: none !important;
     }
@@ -307,14 +307,14 @@
 }
 
 @media screen and (max-width: 480px) {
-  .addshop-modal-wrap .share-buttons .share-button-wrapper {
+  .#{$class-prefix}modal-wrap .share-buttons .share-button-wrapper {
     float: none !important;
     display: inline-block !important;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .addshop-modal-wrap .share-buttons .share-via {
+  .#{$class-prefix}modal-wrap .share-buttons .share-via {
     display: block !important;
     text-align: center !important;
     margin: 0 0 10px !important;
@@ -324,7 +324,7 @@
 }
 
 @media screen and (max-width: 480px) {
-  .addshop-modal-wrap .share-buttons .share-buttons-center {
+  .#{$class-prefix}modal-wrap .share-buttons .share-buttons-center {
     display: block !important;
     height: auto !important;
     text-align: center !important;
@@ -332,25 +332,25 @@
 }
 
 @media screen and (max-width: 480px) {
-  .addshop-modal-wrap .share-buttons .sharing-link {
+  .#{$class-prefix}modal-wrap .share-buttons .sharing-link {
     display: none !important;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .addshop-modal-wrap .share-buttons #twitter-counter {
+  .#{$class-prefix}modal-wrap .share-buttons #twitter-counter {
     right: 10px !important;
     bottom: 120px !important;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .addshop-modal-wrap .share-buttons #share-button-more {
+  .#{$class-prefix}modal-wrap .share-buttons #share-button-more {
     top: -3px;
   }
 }
 
-.addshop-pinline {
+.#{$class-prefix}pinline {
   text-align: center;
   display: block;
   margin: 15px 0;
@@ -380,7 +380,7 @@
   }
 }
 
-.addshop-sociallogin {
+.#{$class-prefix}sociallogin {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -402,7 +402,7 @@
     &:nth-child(even) {
       margin-right: 0;
     }
-    .addshop-check {
+    .#{$class-prefix}check {
       position: absolute;
       width: 20px;
       height: 20px;
@@ -413,49 +413,49 @@
       display: none;
     }
   }
-  .addshop-facebook {
+  .#{$class-prefix}facebook {
     background-color: #4666bf;
   }
-  .addshop-twitter {
+  .#{$class-prefix}twitter {
     background-color: #77C4FA;
   }
-  .addshop-google {
+  .#{$class-prefix}google {
     background-color: #D75334;
   }
-  .addshop-amazon {
+  .#{$class-prefix}amazon {
     background-color: #E1AA22;
   }
-  .addshop-instagram {
+  .#{$class-prefix}instagram {
     background-color: #504F4F;
   }
-  .addshop-paypal {
+  .#{$class-prefix}paypal {
     background-color: #4A7B9D;
   }
-  .addshop-linkedin {
+  .#{$class-prefix}linkedin {
     background-color: #007BB6;
   }
-  .addshop-facebook {
+  .#{$class-prefix}facebook {
     background-image: url(https://s3.amazonaws.com/addshoppers-product/img/fb.svg);
   }
-  .addshop-twitter {
+  .#{$class-prefix}twitter {
     background-image: url(https://s3.amazonaws.com/addshoppers-product/img/twit.svg);
   }
-  .addshop-google {
+  .#{$class-prefix}google {
     background-image: url(https://s3.amazonaws.com/addshoppers-product/img/goog.svg);
   }
-  .addshop-amazon {
+  .#{$class-prefix}amazon {
     background-image: url(https://s3.amazonaws.com/addshoppers-product/img/amazon.svg);
   }
-  .addshop-instagram {
+  .#{$class-prefix}instagram {
     background-image: url(https://s3.amazonaws.com/addshoppers-product/img/insta.svg);
   }
-  .addshop-paypal {
+  .#{$class-prefix}paypal {
     background-image: url(https://s3.amazonaws.com/addshoppers-product/img/paypal.svg);
   }
-  .addshop-linkedin {
+  .#{$class-prefix}linkedin {
     background-image: url(https://s3.amazonaws.com/addshoppers-product/img/linked.svg);
   }
-  .addshop-sign-out {
+  .#{$class-prefix}sign-out {
     width: 100%;
     margin-left: 0;
     margin-right: 0;
@@ -465,16 +465,16 @@
   }
 }
 
-.addshop-socialloginhalf li {
+.#{$class-prefix}socialloginhalf li {
   margin-right: 1%;
   width: 49.5%;
   float: left;
 }
 
-.addshop-inlineloginwrap {
+.#{$class-prefix}inlineloginwrap {
   margin-right: -10px;
   margin-left: -10px;
-  .addshop-icon-login {
+  .#{$class-prefix}icon-login {
     display: table;
     table-layout: fixed;
     border-spacing: 10px 0;
@@ -485,7 +485,7 @@
   }
 }
 
-.addshop-icontext-login {
+.#{$class-prefix}icontext-login {
   li {
     text-indent: 50px;
     background-image: none;
@@ -501,28 +501,28 @@
       background-repeat: no-repeat;
     }
   }
-  .addshop-facebook:before {
+  .#{$class-prefix}facebook:before {
     background-image: url(https://s3.amazonaws.com/addshoppers-product/img/fb.svg);
   }
-  .addshop-twitter:before {
+  .#{$class-prefix}twitter:before {
     background-image: url(https://s3.amazonaws.com/addshoppers-product/img/twit.svg);
   }
-  .addshop-google:before {
+  .#{$class-prefix}google:before {
     background-image: url(https://s3.amazonaws.com/addshoppers-product/img/goog.svg);
   }
-  .addshop-amazon:before {
+  .#{$class-prefix}amazon:before {
     background-image: url(https://s3.amazonaws.com/addshoppers-product/img/amazon.svg);
   }
-  .addshop-instagram:before {
+  .#{$class-prefix}instagram:before {
     background-image: url(https://s3.amazonaws.com/addshoppers-product/img/insta.svg);
   }
-  .addshop-paypal:before {
+  .#{$class-prefix}paypal:before {
     background-image: url(https://s3.amazonaws.com/addshoppers-product/img/paypal.svg);
   }
-  .addshop-linkedin:before {
+  .#{$class-prefix}linkedin:before {
     background-image: url(https://s3.amazonaws.com/addshoppers-product/img/linked.svg);
   }
-  .addshop-sign-out {
+  .#{$class-prefix}sign-out {
     width: 100%;
     margin-left: 0;
     margin-right: 0;

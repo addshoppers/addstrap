@@ -108,7 +108,7 @@
 .#{$class-prefix}alert-info {
   @include alert-variant($alert-info-bg, $alert-info-border, $alert-info-text);
 
-  & .close, .close:hover {
+  & .#{$class-prefix}close, .#{$class-prefix}close:hover {
     color: $alert-info-text;
   }
 }

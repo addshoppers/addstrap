@@ -3,7 +3,7 @@ $bootstrap-sass-asset-helper: false;
 // Variables
 // --------------------------------------------------
 
-$class-prefix: '';
+$class-prefix: '' !default;
 //== Colors
 //
 //## Gray and brand colors for use across Bootstrap.
@@ -36,7 +36,7 @@ $brand-white:          	#ffffff;
 //** Background color for `<body>`.
 $body-bg:               #fff;
 //** Global text color on `<body>`.
-$text-color:            $gray-base;
+$text-color:            $gray-base !default;
 
 //** Global textual link color.
 $link-color:            $brand-info;
@@ -63,9 +63,9 @@ $font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-family-serif:       Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
-$font-family-base:        $font-family-sans-serif;
+$font-family-base:        $font-family-sans-serif !default;
 
-$font-size-base:          16px;
+$font-size-base:          16px !default;
 $font-size-large:         ceil(($font-size-base * 1.25)); // ~18px
 $font-size-small:         ceil(($font-size-base * 0.85)); // ~12px
 
@@ -119,7 +119,7 @@ $padding-xs-horizontal:     15px;
 $line-height-large:         1.3333333; // extra decimals for Win 8.1 Chrome
 $line-height-small:         1.5;
 
-$border-radius-base:        5px;
+$border-radius-base:        5px !default;
 $border-radius-large:       8px;
 $border-radius-small:       3px;
 
@@ -170,7 +170,7 @@ $btn-outline-bg:                 transparent;
 $btn-outline-border:             $gray-lighter;
 
 $btn-primary-color:              #fff;
-$btn-primary-bg:                 $brand-primary;
+$btn-primary-bg:                 $brand-primary !default;
 $btn-primary-border:             transparent;
 
 $btn-success-color:              #fff;
@@ -207,9 +207,9 @@ $input-bg:                       #fff;
 $input-bg-disabled:              $gray-lighter;
 
 //** Text color for `<input>`s
-$input-color:                    $gray-base;
+$input-color:                    $gray-base !default;
 //** `<input>` border color
-$input-border:                   $gray-lighter;
+$input-border:                   $gray-lighter !default;
 
 // TODO: Rename `$input-border-radius` to `$input-border-radius-base` in v4
 //** Default `.form-control` border radius
@@ -221,10 +221,10 @@ $input-border-radius-large:      $border-radius-large;
 $input-border-radius-small:      $border-radius-small;
 
 //** Border color for inputs on focus
-$input-border-focus:             $gray-light;
+$input-border-focus:             $gray-light !default;
 
 //** Placeholder text color
-$input-color-placeholder:        $gray-light;
+$input-color-placeholder:        $gray-light !default;
 
 //** Default `.form-control` height
 $input-height-base:              ($line-height-computed + ($padding-base-vertical * 2) + 2);

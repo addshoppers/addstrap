@@ -6,7 +6,7 @@ node_js:
 env:
   global:
     - KEY_FILE=addstrap-travis.json
-    - BUCKET=gs://$BUCKET/
+    - BUCKET=gs://addshoppers-addstrap/
 
 before_install:
   - openssl aes-256-cbc -K $encrypted_6166e8497a27_key -iv $encrypted_6166e8497a27_iv -in addstrap-travis.json.enc -out addstrap-travis.json -d

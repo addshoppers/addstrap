@@ -3,4 +3,4 @@
 set -e
 
 gcloud auth activate-service-account --key-file "$KEY_FILE"
-gsutil rsync -d -r dist/ "$BUCKET"
+gsutil -m rsync -Rd dist/ "$BUCKET"

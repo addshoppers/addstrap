@@ -60,6 +60,7 @@
   opacity: 0;
   visibility: hidden;
   z-index: 9;
+  transition: .2s all;
   &.#{$class-prefix}active {
     opacity: .6;
     visibility: visible;

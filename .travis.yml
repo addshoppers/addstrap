@@ -1,0 +1,28 @@
+language: node_js
+
+node_js:
+  - 8
+
+env:
+  global:
+    - KEY_FILE=addstrap-travis.json
+    - BUCKET=gs://addshoppers-addstrap/
+
+before_install:
+  - openssl aes-256-cbc -K $encrypted_6166e8497a27_key -iv $encrypted_6166e8497a27_iv -in addstrap-travis.json.enc -out addstrap-travis.json -d
+  - echo "deb http://packages.cloud.google.com/apt cloud-sdk-$(lsb_release -c -s) main" | sudo tee -a /etc/apt/sources.list.d/gcp.list
+  - curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+  - sudo apt-get update && sudo apt-get install -y google-cloud-sdk
+
+install:
+  - /bin/echo "Nothing"
+
+script:
+  - /bin/echo "Nothing"
+
+deploy:
+  - provider: script
+    skip_cleanup: true
+    script: build-scripts/travis-gcp-sync.sh
+    on:
+      branch: master

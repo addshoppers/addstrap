@@ -1,6 +1,6 @@
 {
   "name": "addstrap-ui",
-  "version": "1.0.2",
+  "version": "1.1.2",
   "description": "addshoppers ui library",
   "main": "index.js",
   "scripts": {

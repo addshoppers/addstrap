@@ -1,19 +1,20 @@
 @import "variables.scss";
 @import "mixins.scss";
 
-&.#{$class-prefix}-gdpr {
+&.#{$class-prefix}gdpr {
     transition: all .5s;
 
-  &.#{$class-prefix}-hide {
+  &.#{$class-prefix}hide {
     opacity: 0;
     visibility: hidden;
   }
-  .#{$class-prefix}-alert {
+  .#{$class-prefix}alert {
     display: block;
     text-align:left;
     font-size: 12px;
     width: 400px;
     color: $gray-base;
+    z-index: 99999999999;
 
     -webkit-animation: gdpr-fadein 1s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: gdpr-fadein 1s; /* Firefox < 16 */
@@ -28,31 +29,31 @@
       width: calc(100% - $spacing-m);
     }
   }
-  .#{$class-prefix}-alert.#{$class-prefix}-left {
+  .#{$class-prefix}alert.#{$class-prefix}left {
     left: 15px;
     right: auto;
   }
   input[type=checkbox], input[type=radio] {
-    margin: 0;
+    margin-top: 0;
   }
-  .#{$class-prefix}-step {
+  .#{$class-prefix}step {
     display: none;
   }
-  .#{$class-prefix}-btn-xs, .#{$class-prefix}-input-sm {
+  .#{$class-prefix}btn-xs, .#{$class-prefix}input-sm {
     font-size: 12px;
   }
-  .#{$class-prefix}-btn-link {
+  .#{$class-prefix}btn-link {
     color: $gray-base;
     font-weight: bold;
     text-decoration: underline;
   }
-  .#{$class-prefix}-btn-link:hover, .#{$class-prefix}-alert-info .#{$class-prefix}-close, .#{$class-prefix}-alert-info .#{$class-prefix}-close:hover {
+  .#{$class-prefix}btn-link:hover, .#{$class-prefix}alert-info .#{$class-prefix}close, .#{$class-prefix}alert-info .#{$class-prefix}close:hover {
     color: $gray-base;
   }
   iframe {
     width: 100%;
   }
-  .#{$class-prefix}-gdpr-link {
+  .#{$class-prefix}gdpr-link {
     font-weight: bold;
     text-decoration: underline;
     cursor: pointer;

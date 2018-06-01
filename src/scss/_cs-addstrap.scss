@@ -1,6 +1,8 @@
 // Variables
 $class-prefix: 'addshop-';
 
+$gray-base: #5b5b5b;
+
 $font-family-base: Arial, sans-serif;
 $font-size-base: 16px;
 $text-color: #5b5b5b;
@@ -18,6 +20,11 @@ $btn-primary-bg: #64B3DF;
 @import "./_campaign-base.scss";
 @import "./_campaign-modal.scss";
 @import "./_campaign-portal.scss";
+@import "./_campaign-bar.scss";
+
+// Utility classes
+@import "./_utilities.scss";
+@import "./_responsive-utilities.scss";
 
 // Framework Styles
 .#{$class-prefix}wrap {
@@ -67,9 +74,5 @@ $btn-primary-bg: #64B3DF;
 // @import "./_tooltip.scss";
 // @import "./_popovers.scss";
 // @import "./_carousel.scss";
-
-// Utility classes
-@import "./_utilities.scss";
-@import "./_responsive-utilities.scss";
 
 }

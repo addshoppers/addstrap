@@ -1,0 +1,82 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+.#{$class-prefix}wrap.#{$class-prefix}bar {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  background: $gray-darker;
+  color: $brand-white;
+  height: 80px;
+  font-size: 12px;
+
+  &.#{$class-prefix}floating-bar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 999;
+
+    &.#{$class-prefix}top-bar {
+      top: 0;
+    }
+    &.#{$class-prefix}bottom-bar {
+      bottom: 0;
+    }
+  }
+  button.#{$class-prefix}close {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,.8);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #fff;
+    outline: none;
+    line-height: 1px;
+  }
+  .#{$class-prefix}bar-content {
+    display: table;
+    width: calc(100% - 120px);
+    margin: 0 auto;
+    height: 100%;
+
+    .#{$class-prefix}bar-inner {
+      vertical-align: middle;
+      display: table-cell;
+
+      &.#{$class-prefix}bar-slide{
+        display: none;
+  
+        &.#{$class-prefix}bar-slide-showing{
+          display: table-cell;
+        }
+      }
+
+      a {
+        color: #fff;
+        text-decoration: underline;
+      }
+    }
+
+    @media only screen and (max-width:$screen-xs) {
+      .#{$class-prefix}form-group {
+          margin: 0;
+          float: left;
+          width: 80%;
+      }
+      .#{$class-prefix}btn {
+          float: left;
+          width: 18%;
+          margin-left: 2%;
+          overflow: hidden;
+          text-indent: -9999px;
+          background-image: url('https://s3.amazonaws.com/addshoppers-product/img/arrow-right.png');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 10px;
+      }
+    }
+  }
+}

@@ -21,12 +21,16 @@
         -ms-animation: gdpr-fadein 1s; /* Internet Explorer */
          -o-animation: gdpr-fadein 1s; /* Opera < 12.1 */
             animation: gdpr-fadein 1s;
+    
+    @media screen and (max-width: $screen-xs) {
+      width: 100%;
+      right: 0;
+      left: 0;
+      bottom: 0;
+    }
 
     &:before {
       display: none;
-    }
-    @media screen and (max-width: $screen-xs) {
-      width: calc(100% - $spacing-m);
     }
   }
   .#{$class-prefix}alert.#{$class-prefix}left {

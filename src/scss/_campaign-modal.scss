@@ -19,6 +19,10 @@
       -ms-animation: fadeIn 1s; /* Internet Explorer */
        -o-animation: fadeIn 1s; /* Opera < 12.1 */
           animation: fadeIn 1s;
+  &.#{$class-prefix}noanim {
+    transition: 0;
+    animation: none;
+  }
   &.#{$class-prefix}modal-min {
     height: 180px;
     bottom: 20px;
@@ -32,6 +36,16 @@
     }
     .#{$class-prefix}modal-wrap {
       overflow: hidden;
+    }
+  }
+  &.#{$class-prefix}modalsquare {
+    height: 500px;
+
+    .#{$class-prefix}modal-content {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      height: 100%;
     }
   }
   button.#{$class-prefix}close {

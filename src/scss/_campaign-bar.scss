@@ -7,7 +7,7 @@
   text-align: center;
   background: $gray-darker;
   color: $brand-white;
-  height: 80px;
+  height: 60px;
   font-size: 12px;
 
   &.#{$class-prefix}floating-bar {
@@ -21,6 +21,7 @@
     }
     &.#{$class-prefix}bottom-bar {
       bottom: 0;
+      top: auto;
     }
   }
   button.#{$class-prefix}close {

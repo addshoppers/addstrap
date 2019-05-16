@@ -12,7 +12,6 @@
   font-weight: $close-font-weight;
   line-height: 1;
   color: $close-color;
-  @include opacity(.2);
 
   &:hover,
   &:focus {

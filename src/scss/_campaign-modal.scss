@@ -40,27 +40,29 @@
   }
   &.#{$class-prefix}modalsquare {
     height: 500px;
+  }
+}
 
-    .#{$class-prefix}modal-content {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      height: 100%;
-    }
-  }
-  button.#{$class-prefix}close {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    background: rgba(0, 0, 0, 0.8);
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    color: #fff;
-    outline: none;
-    line-height: 1px;
-    z-index: 9;
-  }
+.#{$class-prefix}modal-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.#{$class-prefix}close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(0, 0, 0, 0.2);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #fff;
+  outline: none;
+  line-height: 1px;
+  z-index: 9;
+  opacity: 1;
 }
 
 @media screen and (max-width: 480px) {

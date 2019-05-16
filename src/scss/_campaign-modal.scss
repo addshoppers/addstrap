@@ -43,13 +43,6 @@
   }
 }
 
-.#{$class-prefix}modal-content {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 100%;
-}
-
 .#{$class-prefix}close {
   position: absolute;
   top: 15px;
@@ -63,6 +56,13 @@
   line-height: 1px;
   z-index: 9;
   opacity: 1;
+}
+
+.#{$class-prefix}modal-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
 }
 
 @media screen and (max-width: 480px) {

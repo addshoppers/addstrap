@@ -27,7 +27,7 @@ $btn-primary-bg: #64B3DF;
 @import "./_responsive-utilities.scss";
 
 // Framework Styles
-.#{$class-prefix}wrap {
+// .#{$class-prefix}wrap {
 
 // Reset and dependencies
 // @import "./_normalize.scss";
@@ -36,18 +36,18 @@ $btn-primary-bg: #64B3DF;
 
 // Core CSS
 // @import "./_scaffolding.scss";
-@import "./_type.scss";
+// @import "./_type.scss";
 // @import "./_code.scss";
-@import "./_grid.scss";
-@import "./_tables.scss";
-@import "./_forms.scss";
-@import "./_buttons.scss";
+// @import "./_grid.scss";
+// @import "./_tables.scss";
+// @import "./_forms.scss";
+// @import "./_buttons.scss";
 
 // Components
 // @import "./_component-animations.scss";
 // @import "./_dropdowns.scss";
-@import "./_button-groups.scss";
-@import "./_input-groups.scss";
+// @import "./_button-groups.scss";
+// @import "./_input-groups.scss";
 // @import "./_navs.scss";
 // @import "./_navbar.scss";
 // @import "./_breadcrumbs.scss";
@@ -56,18 +56,18 @@ $btn-primary-bg: #64B3DF;
 // @import "./_labels.scss";
 // @import "./_badges.scss";
 // @import "./_jumbotron.scss";
-@import "./_thumbnails.scss";
-@import "./_alerts.scss";
+// @import "./_thumbnails.scss";
+// @import "./_alerts.scss";
 // @import "./_progress-bars.scss";
-@import "./_media.scss";
+// @import "./_media.scss";
 // @import "./_list-group.scss";
 // @import "./_panels.scss";
-@import "./_responsive-embed.scss";
+// @import "./_responsive-embed.scss";
 // @import "./_wells.scss";
 @import "./_close.scss";
 
 // Apps
-@import "./_gdpr.scss";
+// @import "./_gdpr.scss";
 
 // Components w/ JavaScript
 // @import "./_modals.scss";
@@ -75,4 +75,4 @@ $btn-primary-bg: #64B3DF;
 // @import "./_popovers.scss";
 // @import "./_carousel.scss";
 
-}
+// }

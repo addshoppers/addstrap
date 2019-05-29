@@ -79,13 +79,21 @@
     background-size: cover;
     height: 180px;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    display: table;
     text-align: center;
     transition: all .3s;
     -webkit-transition: all .3s;
     overflow: hidden;
+    .#{$class-prefix}modal-header-content {
+      display: table-cell;
+      vertical-align: middle;
+      font-weight: 700;
+      font-size: 28px;
+      color: #fff;
+      padding: 15px;
+      position: relative;
+      z-index: 1;
+    }
     video {
       position: absolute;
       width: 100%;

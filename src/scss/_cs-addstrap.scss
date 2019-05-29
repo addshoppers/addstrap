@@ -16,12 +16,6 @@ $input-color-placeholder: #ddd;
 
 $btn-primary-bg: #64B3DF;
 
-// Template Styles
-@import "./_campaign-base.scss";
-@import "./_campaign-modal.scss";
-@import "./_campaign-portal.scss";
-@import "./_campaign-bar.scss";
-
 // Utility classes
 @import "./_utilities.scss";
 @import "./_responsive-utilities.scss";
@@ -76,3 +70,9 @@ $btn-primary-bg: #64B3DF;
 // @import "./_carousel.scss";
 
 // }
+
+// Template Styles
+@import "./_campaign-base.scss";
+@import "./_campaign-modal.scss";
+@import "./_campaign-portal.scss";
+@import "./_campaign-bar.scss";

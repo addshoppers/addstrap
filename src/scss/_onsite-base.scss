@@ -1,54 +1,10 @@
-// * {
-//   box-sizing: border-box;
-// }
-// html, body, #wrapper {
-//   min-height: 100%;
-// }
-// body {
-//   margin: 0;
-//   height: 100%;
-//   background-color: #e7edf3;
-// }
-// #wrapper {
-//   overflow: auto;
-//   overflow-x: hidden;
-// }
-
-.portal-container {
-  width: 100%;
-  height: 100%;
-  background: #e7edf3;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.portal-container > div{
-  width: 500px;
-  height: 700px;
-  margin: auto;
-  overflow: hidden;
-  overflow-y: auto;
-  background: #fff;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  box-sizing: content-box;
-  transition: .3s;
-}
-
-
-body {
+.addshoppers_b_modal {
   font-family: 'Arial', sans-serif;
   color: #5b5b5b;
   margin: 0;
-}
-a.addshop-button {
-  background-color: #64B3DF;
-}
-.block_content, .block_content * {
+
+  .block_content,
+  .block_content * {
     margin: 0;
     padding: 0;
     border: 0;
@@ -70,120 +26,165 @@ a.addshop-button {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-}
-.block_content {
+  }
+
+  .block_content {
     padding: 0 !important;
     overflow: auto !important;
-}
-.block_content .modals__wrapper {
+  }
+
+  .block_content .modals__wrapper {
     margin-top: 0 !important;
-}
-.block_content p {
-  margin: 20px 0;
-}
-.highlight {
-    box-shadow: inset 0 0 0 3px #FD7F54;
-}
-img.highlight {
-    border: 3px solid #FD7F54;
+  }
+
+  .block_content p {
+    margin: 20px 0;
+  }
+
+
+  .block_content .modal__wrapper-active,
+  .block_content .modal__wrapper-active .modal__content-full,
+  .block_content,
+  .block_content .modal__header {
+    transition: 0s !important;
+  }
+
+  .block_content .modal__wrapper {
+    animation: none !important;
+  }
+
+  .block_content .modal__wrapper {
+    margin-bottom: 0 !important;
+  }
+
+  .block_content .modal__wrapper-deactive .modal__content-full {
+    padding: 0 !important;
+  }
+
+  .highlight {
+    box-shadow: inset 0 0 0 3px #fd7f54;
+  }
+
+  img.highlight {
+    border: 3px solid #fd7f54;
     box-sizing: border-box;
+  }
+
+  .addshop- {
+    &placeholder {
+      padding: 40px 20%;
+      background: #f2f2f2;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    &placeholder .config-btn {
+      padding: 15px 20px;
+      color: #fff;
+      background: #5b5b5b;
+      border-radius: 5px;
+      cursor: pointer;
+      display: inline-block;
+    }
+
+    &vidwrap {
+      padding-bottom: 0 !important;
+      padding-top: 0 !important;
+      height: auto !important;
+    }
+
+    &vidwrap img {
+      width: 100%;
+      height: auto;
+    }
+
+    &button {
+      background-color: #64b3df;
+      padding: 20px;
+      color: #ffffff;
+      font-weight: bold;
+    }
+
+    &modal-alert {
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      padding: 5px 10px;
+      border-radius: 50px;
+      color: #fff;
+      background: #e94a5e;
+      text-align: center;
+      font-size: 12px;
+      z-index: 1;
+      transition: all 0.3s;
+      -webkit-transition: all 0.3s;
+    }
+
+    &stretch {
+      width: 100%;
+      height: 100%;
+    }
+
+    &form-group {
+      margin-bottom: 15px;
+    }
+
+    &input,
+    &textarea {
+      padding: 20px;
+      width: 100%;
+      border: 1px solid #e7edf3;
+    }
+  }
 }
-.block_content .modal__wrapper-active, .block_content .modal__wrapper-active .modal__content-full, .block_content, .block_content .modal__header {
-  transition: 0s !important;
-}
-.block_content .modal__wrapper {
-  animation: none !important;
-}
-.block_content .modal__wrapper {
-  margin-bottom: 0 !important;
-}
-.block_content .modal__wrapper-deactive .modal__content-full {
-  padding: 0 !important;
-}
-.addshop-placeholder {
-  padding: 40px 20%;
-  background: #f2f2f2;
-  border-radius: 5px;
-  font-weight: bold;
-}
-.addshop-placeholder .config-btn {
-  padding: 15px 20px;
-  color: #fff;
-  background: #5b5b5b;
-  border-radius: 5px;
-  cursor: pointer;
-  display: inline-block;
-}
-.addshop-vidwrap {
-  padding-bottom: 0 !important;
-  padding-top: 0 !important;
-  height: auto !important;
-}
-.addshop-vidwrap img {
-  width: 100%;
-  height: auto;
-}
-.addshop-button {
-  background-color: #64B3DF;
-}
+
 @media only screen and (max-width: 480px) {
-  .block_content .modal__wrapper .modal__header .modal__header-content, .block_content .modal__wrapper .modal__header .modal__header-content span {
-    font-size: 23px !important;
-  }
-  .addshop-modal {
-    font-size: 14px !important;
-  }
-  .addshop-heading1, .addshop-heading1 span {
-    font-size: 22px !important;
-  }
-  .addshop-heading2, .addshop-heading2 span {
-    font-size: 16px !important;
-  }
-  .addshop-form input[type="text"], .addshop-button {
-    font-size: 16px !important;
-  }
-}
+  .addshoppers_b_modal {
+    .block_content .modal__wrapper .modal__header .modal__header-content,
+    .block_content .modal__wrapper .modal__header .modal__header-content span {
+      font-size: 23px !important;
+    }
 
-.addshop-modal-alert {
-  opacity: 0;
-  visibility: hidden;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  padding: 5px 10px;
-  border-radius: 50px;
-  color: #fff;
-  background: #E94A5E;
-  text-align: center;
-  font-size: 12px;
-  z-index: 1;
-  transition: all .3s;
-  -webkit-transition: all .3s;
-}
+    .addshop- {
+      &modal {
+        font-size: 14px !important;
+      }
 
-/*
-  the following are not present on user sites, they are only here to
-  solve display issues in grapesjs. they may cause what is in grapejs
-  to not accurately reflect what will be seen on the user site. further
-  investigation is required.
-*/
+      &heading1,
+      &heading1 span {
+        font-size: 22px !important;
+      }
 
-.addshop-stretch {
-  width: 100%;
-  height: 100%;
-}
+      &heading2,
+      &heading2 span {
+        font-size: 16px !important;
+      }
 
-.form-group {
-  margin-bottom: 15px;
-}
-.input, .textarea {
-  padding: 20px;
-  width: 100%;
-  border: 1px solid #e7edf3;
-}
-.button {
-  padding: 20px;
-  color: #ffffff;
-  font-weight: bold;
-  background: #1F2D3D;
+      &form input[type='text'],
+      &button {
+        font-size: 16px !important;
+        padding: 20px;
+        color: #ffffff;
+        font-weight: bold;
+      }
+
+      &stretch {
+        width: 100%;
+        height: 100%;
+      }
+
+      &form-group {
+        margin-bottom: 15px;
+      }
+
+      &input,
+      &textarea {
+        padding: 20px;
+        width: 100%;
+        border: 1px solid #e7edf3;
+      }
+    }
+  }
 }

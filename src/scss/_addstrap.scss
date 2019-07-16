@@ -42,6 +42,11 @@
 @import "./_wells.scss";
 @import "./_close.scss";
 
+// Dashboard 2.0 modal base & other stylings
+@import "./_onsite-base.scss";
+@import "./_slideout.scss";
+@import "./_floating-tab.scss";
+
 // Components w/ JavaScript
 @import "./_modals.scss";
 @import "./_tooltip.scss";

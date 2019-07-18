@@ -1,4 +1,4 @@
-.addstrapped-slide-out-tab.addstrapped-modal.addstrapped-modaltab .addstrapped-button {
+.addshop-slide-out-tab.addshop-modal.addshop-modaltab .addshop-button {
   padding: 0;
   float: none;
   margin-bottom: 0;
@@ -6,19 +6,19 @@
 }
 
 
-.addstrapped-slide-out-tab .addstrapped-copycode{
+.addshop-slide-out-tab .addshop-copycode{
   margin-top:20px;
 }
-.addstrapped-slide-out-tab .addstrapped-copycodebtn.copied{
+.addshop-slide-out-tab .addshop-copycodebtn.copied{
   background-color:#7fff7f;
 }
-.addstrapped-slide-out-tab .addstrapped-bottomclose{
+.addshop-slide-out-tab .addshop-bottomclose{
   margin-top:50px;
   cursor:pointer;
 }
 
 
-.addstrapped-slide-out-tab.addstrapped-modal .addstrapped-cpncode {
+.addshop-slide-out-tab.addshop-modal .addshop-cpncode {
   padding: 20px;
   background: #fff;
   border-radius: 5px;
@@ -27,32 +27,32 @@
   position: relative;
 }
 
-.addstrapped-slide-out-tab.addstrapped-modal.addstrapped-modaltab {
+.addshop-slide-out-tab.addshop-modal.addshop-modaltab {
   max-height: 500px;
   transform: translate(0%,50%);
 }
-.addstrapped-slide-out-tab.addstrapped-modal.addstrapped-modaltab.addstrapped-modaltab-left {
+.addshop-slide-out-tab.addshop-modal.addshop-modaltab.addshop-modaltab-left {
   right: auto;
   left: -500px;
   transition: .2s;
 }
-.addstrapped-slide-out-tab.addstrapped-modal.addstrapped-modaltab.addstrapped-modaltab-left.addstrapped-show {
+.addshop-slide-out-tab.addshop-modal.addshop-modaltab.addshop-modaltab-left.addshop-show {
   left: 20px;
 }
-.addstrapped-slide-out-tab.addstrapped-modal.addstrapped-modaltab.addstrapped-modaltab-right {
+.addshop-slide-out-tab.addshop-modal.addshop-modaltab.addshop-modaltab-right {
   left: auto;
   right: -500px;
   transition: .2s;
 }
-.addstrapped-slide-out-tab.addstrapped-modal.addstrapped-modaltab.addstrapped-modaltab-right.addstrapped-show {
+.addshop-slide-out-tab.addshop-modal.addshop-modaltab.addshop-modaltab-right.addshop-show {
   right: 20px;
 }
-.addstrapped-slide-out-tab.addstrapped-modal.addstrapped-modaltab.addstrapped-modaltab-left.addstrapped-modaltab-bottom,
-.addstrapped-slide-out-tab.addstrapped-modal.addstrapped-modaltab.addstrapped-modaltab-right.addstrapped-modaltab-bottom {
+.addshop-slide-out-tab.addshop-modal.addshop-modaltab.addshop-modaltab-left.addshop-modaltab-bottom,
+.addshop-slide-out-tab.addshop-modal.addshop-modaltab.addshop-modaltab-right.addshop-modaltab-bottom {
   bottom: 20px;
   transform: none;
 }
-.addstrapped-slide-out-tab.addstrapped-modal.addstrapped-modaltab .addstrapped-modal-content-tab {
+.addshop-slide-out-tab.addshop-modal.addshop-modaltab .addshop-modal-content-tab {
   width: 100%;
   height: 60px;
   color: #fff;
@@ -69,25 +69,25 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.addstrapped-slide-out-tab.addstrapped-modal.addstrapped-modaltab.addstrapped-modaltab-left .addstrapped-modal-content-tab {
+.addshop-slide-out-tab.addshop-modal.addshop-modaltab.addshop-modaltab-left .addshop-modal-content-tab {
 left: 0px;
   transform: rotate(270deg);
   transform-origin: right top;
 }
-.addstrapped-slide-out-tab.addstrapped-modal.addstrapped-modaltab.addstrapped-modaltab-right .addstrapped-modal-content-tab {
+.addshop-slide-out-tab.addshop-modal.addshop-modaltab.addshop-modaltab-right .addshop-modal-content-tab {
   right: 560px;
   transform: rotate(-90deg);
   transform-origin: right top;
 }
 
-.addstrapped-slide-out-tab .addstrapped-h2.addstrapped-marginTop-0 {
+.addshop-slide-out-tab .addshop-h2.addshop-marginTop-0 {
   margin-top: 0;
 }
 @media only screen and (max-width: 480px) {
-  .addstrapped-slide-out-tab.addstrapped-modal.addstrapped-modaltab {
+  .addshop-slide-out-tab.addshop-modal.addshop-modaltab {
       /*width: 90%;*/
   }
-  .addstrapped-slide-out-tab.addstrapped-modal.addstrapped-modaltab.addstrapped-modaltab-left, .addstrapped-modal.addstrapped-modaltab.addstrapped-modaltab-right {
+  .addshop-slide-out-tab.addshop-modal.addshop-modaltab.addshop-modaltab-left, .addshop-modal.addshop-modaltab.addshop-modaltab-right {
       right: 10px;
       left: 10px;
       bottom: -400px;
@@ -95,12 +95,12 @@ left: 0px;
       margin: auto;
       max-height: 400px;
   }
-  .addstrapped-slide-out-tab.addstrapped-modal.addstrapped-modaltab.addstrapped-modaltab-left.addstrapped-show, .addstrapped-modal.addstrapped-modaltab.addstrapped-modaltab-right.addstrapped-show {
+  .addshop-slide-out-tab.addshop-modal.addshop-modaltab.addshop-modaltab-left.addshop-show, .addshop-modal.addshop-modaltab.addshop-modaltab-right.addshop-show {
       bottom: 0;
       right: 10px;
       left: 10px;
   }
-  .addstrapped-slide-out-tab.addstrapped-modal.addstrapped-modaltab.addstrapped-modaltab-left .addstrapped-modal-content-tab, .addstrapped-modal.addstrapped-modaltab.addstrapped-modaltab-right .addstrapped-modal-content-tab {
+  .addshop-slide-out-tab.addshop-modal.addshop-modaltab.addshop-modaltab-left .addshop-modal-content-tab, .addshop-modal.addshop-modaltab.addshop-modaltab-right .addshop-modal-content-tab {
       top: -60px;
       left: 0;
       transform: none;

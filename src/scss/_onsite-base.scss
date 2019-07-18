@@ -63,12 +63,12 @@
 }
 
 
-img.addstrapped-highlight {
+img.addshop-highlight {
   border: 3px solid #fd7f54;
   box-sizing: border-box;
 }
 
-.addstrapped- {
+.addshop- {
   &highlight {
     box-shadow: inset 0 0 0 3px #fd7f54;
   }
@@ -129,15 +129,22 @@ img.addstrapped-highlight {
     height: 100%;
   }
 
-  &form-group {
+  &os-form-group {
     margin-bottom: 15px;
   }
 
-  &input,
-  &textarea {
+  &os-input,
+  &os-textarea {
     padding: 20px;
     width: 100%;
     border: 1px solid #e7edf3;
+  }
+
+  &os-button {
+    padding: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    background: #1F2D3D;
   }
 }
 
@@ -147,7 +154,7 @@ img.addstrapped-highlight {
     font-size: 23px !important;
   }
 
-  .addstrapped- {
+  .addshop- {
     &modal {
       font-size: 14px !important;
     }
@@ -164,26 +171,7 @@ img.addstrapped-highlight {
 
     &form input[type='text'],
     &button {
-      color: #ffffff;
-      font-weight: bold;
-      padding: 20px;
       font-size: 16px !important;
-    }
-
-    &stretch {
-      width: 100%;
-      height: 100%;
-    }
-
-    &form-group {
-      margin-bottom: 15px;
-    }
-
-    &input,
-    &textarea {
-      padding: 20px;
-      width: 100%;
-      border: 1px solid #e7edf3;
     }
   }
 }

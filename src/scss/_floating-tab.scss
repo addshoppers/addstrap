@@ -1,27 +1,27 @@
 
-.addshop-floating-tab.addshop-wrap.addshop-modal {
+.addstrapped-floating-tab.addstrapped-wrap.addstrapped-modal {
   height: 400px;
 }
-.addshop-floating-tab.addshop-modal.addshop-modaltab .addshop-button {
+.addstrapped-floating-tab.addstrapped-modal.addstrapped-modaltab .addstrapped-button {
   padding: 0;
   float: none;
   margin-bottom: 0;
   background: none;
 }
 
-.addshop-floating-tab .addshop-copycode{
+.addstrapped-floating-tab .addstrapped-copycode{
   margin-top:20px;
 }
-.addshop-floating-tab .addshop-copycodebtn.copied{
+.addstrapped-floating-tab .addstrapped-copycodebtn.copied{
   background-color:#7fff7f;
 }
-.addshop-floating-tab .addshop-bottomclose{
+.addstrapped-floating-tab .addstrapped-bottomclose{
   margin-top:50px;
   cursor:pointer;
 }
 
 
-.addshop-floating-tab.addshop-modal .addshop-cpncode {
+.addstrapped-floating-tab.addstrapped-modal .addstrapped-cpncode {
   padding: 20px;
   background: #fff;
   border-radius: 5px;
@@ -30,32 +30,32 @@
   position: relative;
 }
 
-.addshop-floating-tab.addshop-modal.addshop-modaltab {
+.addstrapped-floating-tab.addstrapped-modal.addstrapped-modaltab {
   max-height: 500px;
   transform: translate(0%,50%);
 }
-.addshop-floating-tab.addshop-modal.addshop-modaltab.addshop-modaltab-left {
+.addstrapped-floating-tab.addstrapped-modal.addstrapped-modaltab.addstrapped-modaltab-left {
   right: auto;
   left: -300px;
   transition: .2s;
 }
-.addshop-floating-tab.addshop-modal.addshop-modaltab.addshop-modaltab-left.addshop-show {
+.addstrapped-floating-tab.addstrapped-modal.addstrapped-modaltab.addstrapped-modaltab-left.addstrapped-show {
   left: 20px;
 }
-.addshop-floating-tab.addshop-modal.addshop-modaltab.addshop-modaltab-right {
+.addstrapped-floating-tab.addstrapped-modal.addstrapped-modaltab.addstrapped-modaltab-right {
   left: auto;
   right: -300px;
   transition: .2s;
 }
-.addshop-floating-tab.addshop-modal.addshop-modaltab.addshop-modaltab-right.addshop-show {
+.addstrapped-floating-tab.addstrapped-modal.addstrapped-modaltab.addstrapped-modaltab-right.addstrapped-show {
   right: 20px;
 }
-.addshop-floating-tab.addshop-modal.addshop-modaltab.addshop-modaltab-left.addshop-modaltab-bottom,
-.addshop-floating-tab.addshop-modal.addshop-modaltab.addshop-modaltab-right.addshop-modaltab-bottom {
+.addstrapped-floating-tab.addstrapped-modal.addstrapped-modaltab.addstrapped-modaltab-left.addstrapped-modaltab-bottom,
+.addstrapped-floating-tab.addstrapped-modal.addstrapped-modaltab.addstrapped-modaltab-right.addstrapped-modaltab-bottom {
   bottom: 20px;
   transform: none;
 }
-.addshop-floating-tab.addshop-modal.addshop-modaltab .addshop-modal-content-tab {
+.addstrapped-floating-tab.addstrapped-modal.addstrapped-modaltab .addstrapped-modal-content-tab {
   width: 100%;
   height: 60px;
   color: #fff;
@@ -72,30 +72,30 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.addshop-floating-tab.addshop-modal.addshop-modaltab.addshop-modaltab-left .addshop-modal-content-tab {
+.addstrapped-floating-tab.addstrapped-modal.addstrapped-modaltab.addstrapped-modaltab-left .addstrapped-modal-content-tab {
 left: 0px;
   transform: rotate(270deg);
   transform-origin: right top;
 }
-.addshop-floating-tab.addshop-modal.addshop-modaltab.addshop-modaltab-right .addshop-modal-content-tab {
+.addstrapped-floating-tab.addstrapped-modal.addstrapped-modaltab.addstrapped-modaltab-right .addstrapped-modal-content-tab {
   right: 560px;
   transform: rotate(-90deg);
   transform-origin: right top;
 }
 
-.addshop-floating-tab .addshop-h2.addshop-marginTop-0 {
+.addstrapped-floating-tab .addstrapped-h2.addstrapped-marginTop-0 {
   margin-top: 0;
 }
 
-.addshop-floating-tab [data-inner-container] {
+.addstrapped-floating-tab [data-inner-container] {
   width: 100%;
   height: 100%;
 }
 @media only screen and (max-width: 480px) {
-  .addshop-floating-tab.addshop-modal.addshop-modaltab {
+  .addstrapped-floating-tab.addstrapped-modal.addstrapped-modaltab {
       /*width: 90%;*/
   }
-  .addshop-floating-tab.addshop-modal.addshop-modaltab.addshop-modaltab-left, .addshop-modal.addshop-modaltab.addshop-modaltab-right {
+  .addstrapped-floating-tab.addstrapped-modal.addstrapped-modaltab.addstrapped-modaltab-left, .addstrapped-modal.addstrapped-modaltab.addstrapped-modaltab-right {
       right: 10px;
       left: 10px;
       bottom: -400px;
@@ -103,12 +103,12 @@ left: 0px;
       margin: auto;
       max-height: 400px;
   }
-  .addshop-floating-tab.addshop-modal.addshop-modaltab.addshop-modaltab-left.addshop-show, .addshop-modal.addshop-modaltab.addshop-modaltab-right.addshop-show {
+  .addstrapped-floating-tab.addstrapped-modal.addstrapped-modaltab.addstrapped-modaltab-left.addstrapped-show, .addstrapped-modal.addstrapped-modaltab.addstrapped-modaltab-right.addstrapped-show {
       bottom: 0;
       right: 10px;
       left: 10px;
   }
-  .addshop-floating-tab.addshop-modal.addshop-modaltab.addshop-modaltab-left .addshop-modal-content-tab, .addshop-modal.addshop-modaltab.addshop-modaltab-right .addshop-modal-content-tab {
+  .addstrapped-floating-tab.addstrapped-modal.addstrapped-modaltab.addstrapped-modaltab-left .addstrapped-modal-content-tab, .addstrapped-modal.addstrapped-modaltab.addstrapped-modaltab-right .addstrapped-modal-content-tab {
       top: -60px;
       left: 0;
       transform: none;

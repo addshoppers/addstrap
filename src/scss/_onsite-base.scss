@@ -63,12 +63,12 @@
 }
 
 
-img.addshop-highlight {
+img.addstrapped-highlight {
   border: 3px solid #fd7f54;
   box-sizing: border-box;
 }
 
-.addshop- {
+.addstrapped- {
   &highlight {
     box-shadow: inset 0 0 0 3px #fd7f54;
   }
@@ -100,12 +100,12 @@ img.addshop-highlight {
     height: auto;
   }
 
-  &button {
-    background-color: #64b3df;
-    padding: 20px;
-    color: #ffffff;
-    font-weight: bold;
-  }
+  // &button {
+    // background-color: #64b3df;
+    // padding: 20px;
+    // color: #ffffff;
+    // font-weight: bold;
+  // }
 
   &modal-alert {
     opacity: 0;
@@ -147,7 +147,7 @@ img.addshop-highlight {
     font-size: 23px !important;
   }
 
-  .addshop- {
+  .addstrapped- {
     &modal {
       font-size: 14px !important;
     }
@@ -164,10 +164,10 @@ img.addshop-highlight {
 
     &form input[type='text'],
     &button {
-      font-size: 16px !important;
-      padding: 20px;
       color: #ffffff;
       font-weight: bold;
+      padding: 20px;
+      font-size: 16px !important;
     }
 
     &stretch {

@@ -100,12 +100,12 @@ img.addshop-highlight {
     height: auto;
   }
 
-  &button {
-    background-color: #64b3df;
-    padding: 20px;
-    color: #ffffff;
-    font-weight: bold;
-  }
+  // &button {
+    // background-color: #64b3df;
+    // padding: 20px;
+    // color: #ffffff;
+    // font-weight: bold;
+  // }
 
   &modal-alert {
     opacity: 0;
@@ -129,15 +129,22 @@ img.addshop-highlight {
     height: 100%;
   }
 
-  &form-group {
+  &os-form-group {
     margin-bottom: 15px;
   }
 
-  &input,
-  &textarea {
+  &os-input,
+  &os-textarea {
     padding: 20px;
     width: 100%;
     border: 1px solid #e7edf3;
+  }
+
+  &os-button {
+    padding: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    background: #1F2D3D;
   }
 }
 
@@ -165,25 +172,6 @@ img.addshop-highlight {
     &form input[type='text'],
     &button {
       font-size: 16px !important;
-      padding: 20px;
-      color: #ffffff;
-      font-weight: bold;
-    }
-
-    &stretch {
-      width: 100%;
-      height: 100%;
-    }
-
-    &form-group {
-      margin-bottom: 15px;
-    }
-
-    &input,
-    &textarea {
-      padding: 20px;
-      width: 100%;
-      border: 1px solid #e7edf3;
     }
   }
 }

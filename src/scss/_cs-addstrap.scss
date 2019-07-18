@@ -71,8 +71,14 @@ $btn-primary-bg: #64B3DF;
 
 // }
 
+
 // Template Styles
 @import "./_campaign-base.scss";
 @import "./_campaign-modal.scss";
 @import "./_campaign-portal.scss";
 @import "./_campaign-bar.scss";
+
+// Dashboard 2.0 modal base & other stylings
+@import "./_onsite-base.scss";
+@import "./_slideout.scss";
+@import "./_floating-tab.scss";

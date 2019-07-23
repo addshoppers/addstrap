@@ -129,6 +129,15 @@ img.addshop-highlight {
     height: 100%;
   }
 
+  /*
+    7/22/19 note: Previously, form elements with class names like
+    "addshop-input" or "addshop-button" had styles that were being
+    overwritten by CSS injected from the portal code.
+    For standalone onsite campaigns that are not related to the portal
+    (such as modals or tabs) and have descendant elements previously classed
+    "addshop-input" etc, they are now "addstrap-os-input" or "addstrap-os-button", etc.
+    ("os" standing for "onsite")
+  */
   &os-form-group {
     margin-bottom: 15px;
   }

@@ -14,11 +14,11 @@
   box-shadow: 0px 15px 40px 0px rgba(0, 0, 0, 0.2);
   z-index: 99;
   transition: .3s;
-  -webkit-animation: fadeIn 1s; /* Safari, Chrome and Opera > 12.1 */
-     -moz-animation: fadeIn 1s; /* Firefox < 16 */
-      -ms-animation: fadeIn 1s; /* Internet Explorer */
-       -o-animation: fadeIn 1s; /* Opera < 12.1 */
-          animation: fadeIn 1s;
+  -webkit-animation: addshopFadeIn 1s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: addshopFadeIn 1s; /* Firefox < 16 */
+      -ms-animation: addshopFadeIn 1s; /* Internet Explorer */
+       -o-animation: addshopFadeIn 1s; /* Opera < 12.1 */
+          animation: addshopFadeIn 1s;
   &.#{$class-prefix}noanim {
     transition: 0;
     animation: none;

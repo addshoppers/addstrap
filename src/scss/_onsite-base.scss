@@ -157,6 +157,43 @@ img.addshop-os-highlight {
   }
 }
 
+.addshop-form-control {
+  width: 100%;
+  height: 54px;
+  padding: 15px;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ddd;
+  border-radius: 0;
+  -webkit-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.addshop-btn-block .addshop-button {
+  width: 100%;
+  padding: 15px 25px;
+  line-height: 1.42857;
+}
+button.addshop_button_1 {
+  color: #FFFFFF;
+  border-radius: 0px;
+  font-family: inherit;
+  background-color: #00a3bb;
+}
+.addshop-wrap.addshop-modal button.addshop-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(0,0,0,.8);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #fff;
+  outline: none;
+  line-height: 1px;
+  z-index: 9;
+}
+
 @media only screen and (max-width: 480px) {
   .addshop-os-block_content .modal__wrapper .modal__header .modal__header-content,
   .addshop-os-block_content .modal__wrapper .modal__header .modal__header-content span {
